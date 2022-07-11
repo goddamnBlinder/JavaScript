@@ -11,4 +11,4 @@ function battting(player, distance) {
     
 }
 
-battting("Steve", 360);
+battting("Steve", 1);

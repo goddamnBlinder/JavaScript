@@ -1,6 +1,6 @@
-function battting(player, distance) {
-var colonge = player + " hits the ball @ " + distance + "fts";
-    console.log(colonge);
+var orc = {
+    color: purple,
+    height: 5,
+    weight:180,
 }
-
-battting("Steve", 8);
+console.log(orc);

@@ -1,6 +1,2 @@
-var orc = {
-    color: purple,
-    height: 5,
-    weight:180,
-}
-console.log(orc);
+var number = 4.7;
+var newNumber = 26 + Math.floor(number)

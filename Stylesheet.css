@@ -4,15 +4,15 @@
 }
 body{
 display: flex;
-flex-direction: column;
+ flex-direction: column;
 }
 
 
 #para1, #button{
     margin:0 auto;
-    text-justify: auto;
+    /* text-justify: auto; */
     text-align: center;
     font-size: 4rem;
-    perspective: 200px;
+
 
 }

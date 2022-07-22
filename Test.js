@@ -1,6 +1,6 @@
 function changeStyle(){
      var paragraph= document.getElementsByTagName("p");
 
-     var changeParaText = paragraph[1].style.fontstyle = "italic"; 
+     var changeParaText = paragraph[1].style.fontStyle = "italic"; 
 
 }

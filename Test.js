@@ -1,8 +1,7 @@
 function changeStyle(){
-    var paragragh = document.getElementsByClassName('para');
-    var firstText = paragragh[0].innerHTML = "Tear drops";
-    var secondText = paragragh [1].innerHTML = " from my eyes ";
-    var sum = paragragh[2].innerHTML =  firstText + secondText;
-    var empty = paragragh [0].innerHTML = ''
-    var empty = paragragh [1].innerHTML = '';
+var paragraph = document.getElementsByClassName('para');
+var paragraphOne = paragraph[0].style.color = "blue";
+var paragraphTwo = paragraph[1].style.color = "red";
+var paragraphOne = paragraph[0].innerHTML = "Is now Blue";
+var paragraphTwo = paragraph[1].innerHTML = "Is now Red";
 }

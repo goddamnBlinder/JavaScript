@@ -1,10 +1,15 @@
-function changeStyle(){
- var element = document.createElement("para");
+function newParagraph(){
+
+ var element = document.createElement("p");
+
+
  var main = document.querySelector(".main");
 
  main.appendChild(element);
 
- var text = document.createTextNode("lorem hfuoc  jcablcbv jcbldbvdjbv jdl bvwflvbsn,sbhkvw;v blvw.bva;yigvv  jfbea/vbuobv/avub");
+ var text = document.createTextNode("We want to pray, close your eyes put your hands together say your prayers");
 
- elemennt.appendChild("text");
+ element.appendChild("text");
+
+
 } 

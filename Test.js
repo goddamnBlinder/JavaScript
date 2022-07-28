@@ -20,12 +20,17 @@ function newParagraph(){
 
  element.appendChild(text);
 
+ Remove(element);
+
 
 } 
-function Remove(){
-    var element = document.createElement("p")
+function Remove(text){
     var H = document.querySelector(".main");
+    console.log(H);
+    H.removeChild(text);
+    
 
-    removechild("p");
-    console.log(removechild)
+    // removechild(element);
+    // console.log(removechild)
+
 }

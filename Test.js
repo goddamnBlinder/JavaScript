@@ -3,4 +3,4 @@ function changeStyle(){
  var main = document.querySelector(".main")
 
  main.appendChild(elemennt);
-}
+} 

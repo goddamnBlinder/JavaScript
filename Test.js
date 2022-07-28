@@ -9,7 +9,7 @@ function newParagraph(){
 
  var element = document.createElement("p");
 
- var main = document.querySelector(".main");
+//  var main = document.querySelector(".main");
  console.log(main);
 
 
@@ -20,14 +20,14 @@ function newParagraph(){
 
  element.appendChild(text);
 
- Remove(element);
+ Remove(element, main);
 
 
 } 
-function Remove(text){
-    var H = document.querySelector(".main");
-    console.log(H);
-    H.removeChild(text);
+function Remove(Tinibu , Jagaban){
+    // var H = document.querySelector(".main");
+    Jagaban.Remove(Tinibu);
+
     
 
     // removechild(element);

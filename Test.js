@@ -4,12 +4,14 @@ function newParagraph(){
 
 
  var main = document.querySelector(".main");
+ console.log(main);
+
 
  main.appendChild(element);
 
  var text = document.createTextNode("We want to pray, close your eyes put your hands together say your prayers");
 
- element.appendChild("text");
+ element.appendChild(text);
 
 
 } 

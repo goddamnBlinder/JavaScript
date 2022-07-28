@@ -1,6 +1,10 @@
 function changeStyle(){
- var elemennt = document.createElement("p");
- var main = document.querySelector(".main")
+ var element = document.createElement("para");
+ var main = document.querySelector(".main");
 
- main.appendChild(elemennt);
+ main.appendChild(element);
+
+ var text = document.createTextNode("lorem hfuoc  jcablcbv jcbldbvdjbv jdl bvwflvbsn,sbhkvw;v blvw.bva;yigvv  jfbea/vbuobv/avub");
+
+ elemennt.appendChild("text");
 } 

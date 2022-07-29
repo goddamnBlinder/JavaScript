@@ -1,15 +1,13 @@
 function newParagraph(){
-
-    var H = document.createElement("h1");
+    var elementH = document.createElement("h1");
     var main = document.querySelector(".main");
-    main.appendChild(H);
+   main.appendChild(elementH);
     var text = document.createTextNode("Kevin Calvin");
-    H.appendChild(text);
+    elementH.appendChild(text);
 
 
  var element = document.createElement("p");
 
-//  var main = document.querySelector(".main");
  console.log(main);
 
 
@@ -20,17 +18,18 @@ function newParagraph(){
 
  element.appendChild(text);
 
- Remove(element, main);
-
 
 } 
-function Remove(Tinibu , Jagaban){
-    // var H = document.querySelector(".main");
-    Jagaban.Remove(Tinibu);
+function removeHeader(){
+   
+    var elementH = document.getElementsByTagName("h1")[0];
+    var parent = elementH.parentNode;
+    parent.removeChild(elementH);
 
+
+    var element = document.getElementsByTagName("p")[2];
     
+    parent.removeChild(element);
 
-    // removechild(element);
-    // console.log(removechild)
 
 }

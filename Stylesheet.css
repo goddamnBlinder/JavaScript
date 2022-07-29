@@ -5,6 +5,7 @@
 .button {
     font: 10rem;
 }
-#para1, #para2, #para3, #para4 {
+#test{
     font-size: 2rem;
+    color: hotpink;
 }

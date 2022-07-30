@@ -14,7 +14,15 @@ var text = document.createTextNode("We want to pray, close your eyes put your ha
  element.appendChild(text);
 
 
- var pAttribute = document.createAttribute("text")
+ var pAttribute = document.createAttribute("id")
+ pAttribute.value = "test";
+ element.setAttributeNode(pAttribute);
+
+
+
+ var pAttributi = document.createAttribute("h1")
+ pAttributi.value = "test";
+ elementH.setAttributeNode(pAttributi);
 
 
 

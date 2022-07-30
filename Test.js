@@ -8,15 +8,15 @@ function newParagraph(){
 
  var element = document.createElement("p");
 
- console.log(main);
-
-
- main.appendChild(element);
-
- var text = document.createTextNode("We want to pray, close your eyes put your hands together say your prayers");
- 
-
+console.log(main);
+main.appendChild(element);
+var text = document.createTextNode("We want to pray, close your eyes put your hands together say your prayers");
  element.appendChild(text);
+
+
+ var pAttribute = document.createAttribute("text")
+
+
 
 
 } 
@@ -28,7 +28,7 @@ function removeHeader(){
 
 
     var element = document.getElementsByTagName("p")[2];
-    
+
     parent.removeChild(element);
 
 

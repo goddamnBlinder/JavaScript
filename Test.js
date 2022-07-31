@@ -29,15 +29,20 @@ var text = document.createTextNode("We want to pray, close your eyes put your ha
 
 } 
 function removeHeader(){
+   if(parent.innerHTML== ""){
+    return;
+   }else{
+    console.log(parent);
+       var elementH = document.getElementsByTagName("h1")[0];
+       var parent = elementH.parentNode;
+       parent.removeChild(elementH);
    
-    var elementH = document.getElementsByTagName("h1")[0];
-    var parent = elementH.parentNode;
-    parent.removeChild(elementH);
+   
+       var element = document.getElementsByTagName("p")[2];
+   
+       parent.removeChild(element);
 
-
-    var element = document.getElementsByTagName("p")[2];
-
-    parent.removeChild(element);
+   }
 
 
 }

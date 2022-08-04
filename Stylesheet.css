@@ -4,30 +4,32 @@
 }
 
 body {
-    position: flex;
-    flex-direction: column;
-    border: 0;
+    margin: 0 auto;
     
 }
 
 h1{
     font-size: 2rem;
     font-family: sans-serif;
-    text-align: center;
-    padding-bottom: 4rem;
 }
+ 
 
 
 #theForm{
-    margin: 0 auto;
-    width: 5rem;
     display: table;
-    align-items: center;
-    justify-content: space-between;
-    background-color: aqua;
-    color: black;
+    background-color:gray;
+    color: #ffff;
+    font-size: 2.4rem;
 
 }
 .row{
     display: table-row;
 }
+.row label {
+    display:table-cell;
+     font: 2px;
+}
+.row input{
+    display: table-cell;
+    
+} 

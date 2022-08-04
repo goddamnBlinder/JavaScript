@@ -2,10 +2,32 @@
     margin: 0;
     border: 0;
 }
-.button {
-    font: 10rem;
+
+body {
+    position: flex;
+    flex-direction: column;
+    border: 0;
+    
 }
-.test{
+
+h1{
     font-size: 2rem;
-    color: hotpink;
+    font-family: sans-serif;
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+
+#theForm{
+    margin: 0 auto;
+    width: 5rem;
+    display: table;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aqua;
+    color: black;
+
+}
+.row{
+    display: table-row;
 }

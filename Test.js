@@ -6,8 +6,9 @@ function SumbitForm(){
  
 
 
-let firstName = "Bro";
-let age = 21;
+let firstName = "James";
+let age = 22;
 let student = true;
 
-console.log("Hello")
+console.log("Hello", firstName);
+console.log ( "you are")                                 

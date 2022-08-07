@@ -68,8 +68,8 @@ function resetCount(){
 let changeButton = document.getElementById("RandomBtn");
 let resetB = document.getElementById("reset");
 let  dee = document.getElementById("Jagaban");
-let hp = dee.innerHTML;
-console.log(hp);
+let viewbox = dee.innerHTML;
+console.log(viewbox);
 
 
 changeButton.addEventListener("click", change)
@@ -78,12 +78,14 @@ resetB.addEventListener("click", remove)
 
 function change(){
 
-  hp = Math.floor(Math.random() * 8 );
-// hp = rand;
-// console.log(rand)
+  viewbox = Math.floor(Math.random() * 33 );
+console.log(viewbox);
+dee.innerHTML= viewbox
 
 }
 
 function remove(){
-  hp = 0;
+  viewbox = 0;
+  console.log(viewbox);
+  dee.innerHTML = viewbox
 }

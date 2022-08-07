@@ -90,3 +90,11 @@ h2{
     flex-direction: inherit;
     font-size: 32px;
 }
+
+p {
+    flex: content;
+    display: block;
+    flex-direction: inherit;
+    font-size: 32px;
+}
+

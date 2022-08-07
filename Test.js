@@ -28,57 +28,62 @@ function SumbitForm(){
 // }
 
 
-// let increaseBtn = document.getElementById("IncreaseBtn");
-// let decreaseBtn = document.getElementById("DecreaseBtn");
-// let resetBtn = document.getElementById("resetBtn");
-// let  counter = document.getElementById("countLabel");
-// let count = counter.innerHTML;
+let increaseBtn = document.getElementById("IncreaseBtn");
+let decreaseBtn = document.getElementById("DecreaseBtn");
+let resetBtn = document.getElementById("resetBtn");
+let  counter = document.getElementById("countLabel");
+let count = counter.innerHTML;
 
 
 
-// increaseBtn.addEventListener('click', increaseCount)
-// decreaseBtn.addEventListener('click', decreaseCount)
-// resetBtn.addEventListener('click', resetCount)
+increaseBtn.addEventListener('click', increaseCount)
+decreaseBtn.addEventListener('click', decreaseCount)
+resetBtn.addEventListener('click', resetCount)
 
-// function increaseCount(){
-//   count++;
-//   counter.innerText = count;
+function increaseCount(){
+  count++;
+  counter.innerText = count;
   
-// }
+}
 
-// function decreaseCount(){
-//   count--;
-//   if(count < 0){
-//     count = 0;
+function decreaseCount(){
+  count--;
+  if(count < 0){
+    count = 0;
   
-//   }else{
-//     counter.innerText = count;
-//   }
-//   console.log(count);
-// }
+  }else{
+    counter.innerText = count;
+  }
+  console.log(count);
+}
 
 
-// function resetCount(){
-//   counter.textContent = 0;
-// }
+function resetCount(){
+  counter.textContent = 0;
+}
 
                                                         //  Radom Time
 
 
 let changeButton = document.getElementById("RandomBtn");
-
+let resetB = document.getElementById("reset");
 let  dee = document.getElementById("Jagaban");
-let hp = dee.innerText;
+let hp = dee.innerHTML;
+console.log(hp);
 
 
 changeButton.addEventListener("click", change)
+resetB.addEventListener("click", remove)
 
 
 function change(){
 
-  count = Math.floor(Math.random());
-  console.log(count);
+  hp = Math.floor(Math.random() * 8 );
+// hp = rand;
+// console.log(rand)
 
 }
 
-
+function remove(){
+  hp = 0;
+}

@@ -62,7 +62,7 @@ function resetCount(){
   counter.textContent = 0;
 }
 
-                                                        //  Radom Time
+                                                 //  Radom Time
 
 
 let changeButton = document.getElementById("RandomBtn");
@@ -89,3 +89,7 @@ function remove(){
   console.log(viewbox);
   dee.innerHTML = viewbox
 }
+
+
+// Hex color changer 
+

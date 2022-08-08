@@ -98,8 +98,16 @@ p {
     font-size: 32px;
 }
 
+/* color Generator */
 
 .center{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+
+}
+ 
+#chnger, #change {
     margin: 0 auto;
-    padding: ;
+
 }

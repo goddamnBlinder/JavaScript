@@ -93,24 +93,4 @@ function remove(){
 
 // Hex color changer 
 
-var btn = getElementById("change");
-var see = getElementById("chnger");
 
-var generator = function(){
-    newColor = '#' + 
-       (Math.random()* 0xFFFFF<<0).toString(16);
-    console.log(newColor.length);
-    if (newColor.length < 7){
-        generator();
-        // console.log(newColor);
-    }
-
-}
- btn.addEventListener('click', generator)
- function generator(){
-
-  document.body.style.background = newColor;
-  btn.style.color = newColor;
-  see.innerHTML = newColor;
- 
- }

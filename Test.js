@@ -98,19 +98,19 @@ var see = getElementById("chnger");
 
 var generator = function(){
     newColor = '#' + 
-       (Math.random()*0xFFFFF<<0).toString(16);
+       (Math.random()* 0xFFFFF<<0).toString(16);
     console.log(newColor.length);
-    if (newColor.lengh < 7){
+    if (newColor.length < 7){
         generator();
-        console.log(newColor);
+        // console.log(newColor);
     }
 
 }
- btn.addEventListener('click',Function)
-  generator();
+ btn.addEventListener('click', generator)
+ function generator(){
 
-  document. body.style.background = newColor;
+  document.body.style.background = newColor;
   btn.style.color = newColor;
   see.innerHTML = newColor;
-
  
+ }

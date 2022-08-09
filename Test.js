@@ -91,6 +91,5 @@ function remove(){
 }
 
 
-// Hex color changer 
 
 

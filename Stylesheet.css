@@ -102,3 +102,13 @@ p {
 
 /* color Generator */
 
+.count-color{
+    font-size: 3.5rem;
+    display: flex;
+    
+}
+
+button {
+    
+    aspect-ratio: 2/1;
+}

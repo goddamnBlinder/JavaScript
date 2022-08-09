@@ -12,6 +12,9 @@ body {
     align-items: center;
     justify-content: center;  
     height: 100vh;
+    background:#E63C44;
+    color:#ffff;
+    font-weight: bold;
 }
 
 .container-form{
@@ -110,4 +113,15 @@ p {
 #chnger, #change {
     margin: 0 auto;
 
+}
+button#change {
+display: block;
+width: 9rem;
+height: 2rem;background: #ffff;
+color: #E63C44;
+
+}
+
+body , #chnger , button#change{
+    transition: all 0.6s ease-in-out;
 }

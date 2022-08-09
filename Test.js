@@ -62,7 +62,7 @@ function resetCount(){
   counter.textContent = 0;
 }
 
-                                                 //  Radom Time
+                                                 //  Radom Number
 
 
 let changeButton = document.getElementById("RandomBtn");
@@ -93,3 +93,24 @@ function remove(){
 
 // Hex color changer 
 
+var btn = getElementById("change");
+var see = getElementById("chnger");
+
+var generator = function(){
+    newColor = '#' + 
+       (Math.random()*0xFFFFF<<0).toString(16);
+    console.log(newColor.length);
+    if (newColor.lengh < 7){
+        generator();
+        console.log(newColor);
+    }
+
+}
+ btn.addEventListener('click',Function)
+  generator();
+
+  document. body.style.background = newColor;
+  btn.style.color = newColor;
+  see.innerHTML = newColor;
+
+ 

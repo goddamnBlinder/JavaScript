@@ -91,18 +91,27 @@ function remove(){
 }
 
 
-let age = 20;
+// let age = 20;
 
-if( age<= 21){
- console.log("you'\ re still an adolecent");
-}
+// if( age<= 21){
+//  console.log("you'\ re still an adolecent");
+// }
 
- else if(age = 0){
-console.log("you still a baby")
- }
+//  else if(age = 0){
+// console.log("you still a baby")
+//  }
 
 
-else{
-  console.log("The man i is")
+// else{
+//   console.log("The man i is")
   
+// }
+
+let online = true;
+
+if(online){
+  console.log("you are online");
+}
+else {
+  console.log("you are offline");
 }

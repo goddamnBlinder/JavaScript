@@ -115,3 +115,12 @@ if(online){
 else {
   console.log("you are offline");
 }
+
+document.getElementById('btn').onclick = function(){
+  if(document.getElementById('checkbox').checked == true){
+    console.log("Thanks for Subscribing!");
+}
+else {
+  console.log("Haven'\ t subcribe yet");
+}
+}

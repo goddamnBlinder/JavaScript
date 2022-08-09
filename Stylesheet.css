@@ -112,3 +112,12 @@ button {
     
     aspect-ratio: 2/1;
 }
+
+#checkboxLabel, #Checkbox {
+  margin: 0 auto;
+  display: block;
+  align-items: center;
+  float: center;
+
+
+} 

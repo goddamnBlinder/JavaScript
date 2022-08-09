@@ -69,7 +69,7 @@ let changeButton = document.getElementById("RandomBtn");
 let resetB = document.getElementById("reset");
 let  dee = document.getElementById("Jagaban");
 let viewbox = dee.innerHTML;
-console.log(viewbox);
+
 
 
 changeButton.addEventListener("click", change)
@@ -91,5 +91,18 @@ function remove(){
 }
 
 
+let age = 20;
+
+if( age<= 21){
+ console.log("you'\ re still an adolecent");
+}
+
+ else if(age = 0){
+console.log("you still a baby")
+ }
 
 
+else{
+  console.log("The man i is")
+  
+}

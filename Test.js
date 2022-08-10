@@ -138,12 +138,58 @@ document.getElementById('btn').onclick = function(){
 
 if (pay.checked == true)
  {
-  console.log("you/ 're paying with paypal");
+  console.log("you\ 're paying with paypal");
 }
-else if (master.){
-
+else if (master.checked == true){
+  console.log("you\ 're paying with Master Card");
+}
+else if (visa.checked == true) {
+  console.log("you\ 're paying with Visa");
+}
+else{
+   console.log("please Select your method for payment");
 }
 
+  
+}
 
+let grade = "F";
+switch (grade) {
+  case "A":
+    console.log("Excellence");
+    break;
+  case "B":
+    console.log("Very Good");
+    break;
+  case "C":
+    console.log("Good");
+    break;
+  case "D":
+    console.log("Pass");
+    break;
+  case "F":
+    console.log("Carry Over");
+    break;
 
+  default:
+    console.log(grade, "is not a case");
+    break;
+}
+
+// conditions AND , OR 
+let temp = 12
+
+if(temp > 0 && temp < 24 ){
+  console.log("the Weather is Good, ThankGod!");
+}
+else{
+  console.log("chaii, Rain wan fall");
+}
+let tem = 12
+
+if(tem <= 0 || tem >= 30){
+  console.log("the Weather is Good, ThankGod!");
+}
+else{
+  console.log("chaii, Rain wan fall");
 }

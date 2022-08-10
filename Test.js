@@ -176,7 +176,7 @@ switch (grade) {
     break;
 }
 
-// conditions AND , OR 
+// conditions AND , OR NOt
 let temp = 12
 
 if(temp > 0 && temp < 24 ){
@@ -188,6 +188,21 @@ else{
 let tem = 12
 
 if(tem <= 0 || tem >= 30){
+  console.log("the Weather is Good, ThankGod!");
+}
+else{
+  console.log("chaii, Rain wan fall");
+}
+
+let T = 15;
+let sunny = true;
+if(!(T>= 30)){
+  console.log("the Weather is Good, ThankGod!");
+}
+else{
+  console.log("chaii, Rain wan fall");
+}
+if(!sunny){
   console.log("the Weather is Good, ThankGod!");
 }
 else{

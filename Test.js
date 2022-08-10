@@ -116,11 +116,34 @@ else {
   console.log("you are offline");
 }
 
+
+
 document.getElementById('btn').onclick = function(){
-  if(document.getElementById('checkbox').checked == true){
+
+const Checker = document.getElementById('checkbox');
+
+  if( Checker.checked == true){
     console.log("Thanks for Subscribing!");
 }
 else {
   console.log("Haven'\ t subcribe yet");
 }
+}
+
+const pay = document.getElementById("paypal");
+const master = document.getElementById('Mastercard');
+const visa = document.getElementById('visaBtn');
+
+document.getElementById('btn').onclick = function(){
+
+if (pay.checked == true)
+ {
+  console.log("you/ 're paying with paypal");
+}
+else if (master.){
+
+}
+
+
+
 }

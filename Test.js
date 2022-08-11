@@ -208,3 +208,20 @@ if(!sunny){
 else{
   console.log("chaii, Rain wan fall");
 }
+
+// While Loop
+
+let userName = " Mr Black";
+while (userName == " " || userName == null) {
+  userName = windows.prompt("Enter your Username")
+}
+
+console.log("Hello,", userName);
+
+
+while (1 == 1) {
+  console.log('increase');
+}
+// do while
+
+ 

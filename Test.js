@@ -31,8 +31,8 @@ function SumbitForm(){
 let increaseBtn = document.getElementById("IncreaseBtn");
 let decreaseBtn = document.getElementById("DecreaseBtn");
 let resetBtn = document.getElementById("resetBtn");
-let  counter = document.getElementById("countLabel");
-let count = counter.innerHTML;
+let  cunter = document.getElementById("countLabel");
+let count = cunter.innerHTML;
 
 
 
@@ -42,7 +42,7 @@ resetBtn.addEventListener('click', resetCount)
 
 function increaseCount(){
   count++;
-  counter.innerText = count;
+  cunter.innerText = count;
   
 }
 
@@ -52,14 +52,14 @@ function decreaseCount(){
     count = 0;
   
   }else{
-    counter.innerText = count;
+    cunter.innerText = count;
   }
   console.log(count);
 }
 
 
 function resetCount(){
-  counter.textContent = 0;
+  cunter.textContent = 0;
 }
 
                                                  //  Radom Number
@@ -150,7 +150,7 @@ else{
    console.log("please Select your method for payment");
 }
 
-  
+  // Switch statement 
 }
 
 let grade = "F";
@@ -220,6 +220,26 @@ console.log("Hello,", userName);
 
 
 
+
+
 // do while
 
- 
+// // let name;
+
+
+// // do{
+// //   name = window.console.log("what is your name");
+   
+  
+// // }while (username == "") {
+// // console.log("Hello " , name);
+// }
+
+
+
+
+//  for loop
+
+for(let cunter = 1; cunter <=10; cunter+= 1){
+  console.log(cunter);
+}

@@ -31,8 +31,8 @@ function SumbitForm(){
 let increaseBtn = document.getElementById("IncreaseBtn");
 let decreaseBtn = document.getElementById("DecreaseBtn");
 let resetBtn = document.getElementById("resetBtn");
-let  cunter = document.getElementById("countLabel");
-let count = cunter.innerHTML;
+let  i = document.getElementById("countLabel");
+let count = i.innerHTML;
 
 
 
@@ -42,7 +42,7 @@ resetBtn.addEventListener('click', resetCount)
 
 function increaseCount(){
   count++;
-  cunter.innerText = count;
+  i.innerText = count;
   
 }
 
@@ -52,14 +52,14 @@ function decreaseCount(){
     count = 0;
   
   }else{
-    cunter.innerText = count;
+    i.innerText = count;
   }
   console.log(count);
 }
 
 
 function resetCount(){
-  cunter.textContent = 0;
+  i.textContent = 0;
 }
 
                                                  //  Radom Number
@@ -240,6 +240,24 @@ console.log("Hello,", userName);
 
 //  for loop
 
-for(let cunter = 1; cunter <=10; cunter+= 1){
-  console.log(cunter);
+for(let i = 5; i > 0; i-= 1){
+  console.log(i);
+}  
+console.log("BOOM!");
+
+
+// nested loop
+let symbol = window.prompt("Add a symbol");
+let columns = window.prompt("# of columns?")
+let rows = window.prompt("# of rows?")
+
+
+
+
+for(let i = 1; i <=rows; i+= 1){
+  for(let j = 1; j <=columns; j+= 1){
+    document.getElementById("myRect").innerHTML += symbol;
+
+  }
+  document.getElementById("myRect").innerHTML += "<br>"
 }

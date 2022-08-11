@@ -219,9 +219,7 @@ while (userName == " " || userName == null) {
 console.log("Hello,", userName);
 
 
-while (1 == 1) {
-  console.log('increase');
-}
+
 // do while
 
  

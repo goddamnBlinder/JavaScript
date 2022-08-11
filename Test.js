@@ -144,7 +144,7 @@ else if (master.checked == true){
   console.log("you\ 're paying with Master Card");
 }
 else if (visa.checked == true) {
-  console.log("you\ 're paying with Visa");
+  console.log(`you're paying with Visa`);
 }
 else{
    console.log("please Select your method for payment");

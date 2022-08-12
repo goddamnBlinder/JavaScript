@@ -247,6 +247,8 @@ console.log("BOOM!");
 
 
 // nested loop
+
+
 let symbol = window.prompt("Add a symbol");
 let columns = window.prompt("# of columns?")
 let rows = window.prompt("# of rows?")
@@ -260,4 +262,18 @@ for(let i = 1; i <=rows; i+= 1){
 
   }
   document.getElementById("myRect").innerHTML += "<br>"
+}
+
+
+// Function 
+
+startProgram();
+/* local variables inside a function */
+
+
+function startProgram(){
+  let names= "Bro";
+  let a = 21;
+
+
 }

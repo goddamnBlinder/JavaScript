@@ -277,14 +277,14 @@ function startProgram(){
 
 }
 
-happyBirthday();
+happyBirthday(nam, a);
 
 
-function happyBirthday(){
+function happyBirthday(a, b){
    console.log("Happy Birthday to you!");
    console.log("Happy Birthday to you!");
-   console.log("Happy Birthday to dear ", nam);
+   console.log("Happy Birthday to dear " + a);
    console.log("Happy Birthday to you!");
-   console.log("You are", a ,"years old");
+   console.log("You are", b ,"years old");
 }
 

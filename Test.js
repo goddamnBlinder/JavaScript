@@ -249,20 +249,20 @@ console.log("BOOM!");
 // nested loop
 
 
-let symbol = window.prompt("Add a symbol");
-let columns = window.prompt("# of columns?")
-let rows = window.prompt("# of rows?")
+// let symbol = window.prompt("Add a symbol");
+// let columns = window.prompt("# of columns?")
+// let rows = window.prompt("# of rows?")
 
 
 
 
-for(let i = 1; i <=rows; i+= 1){
-  for(let j = 1; j <=columns; j+= 1){
-    document.getElementById("myRect").innerHTML += symbol;
+// for(let i = 1; i <=rows; i+= 1){
+//   for(let j = 1; j <=columns; j+= 1){
+//     document.getElementById("myRect").innerHTML += symbol;
 
-  }
-  document.getElementById("myRect").innerHTML += "<br>"
-}
+//   }
+//   document.getElementById("myRect").innerHTML += "<br>"
+// }
 
 
 // Function 
@@ -272,8 +272,19 @@ startProgram();
 
 
 function startProgram(){
-  let names= "Bro";
+  let nam = "James";
   let a = 21;
 
+}
+
+happyBirthday();
+
+
+function happyBirthday(){
+   console.log("Happy Birthday to you!");
+   console.log("Happy Birthday to you!");
+   console.log("Happy Birthday to dear ", nam);
+   console.log("Happy Birthday to you!");
+   console.log("You are", a ,"years old");
 }
 

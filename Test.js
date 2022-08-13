@@ -295,13 +295,33 @@ function happyBirthday(a, b){
 
 let height;
 let width;
-let: area;
+let area;
 
-width: window.prompt("enter width");
-height: window.prompt("enter height");
+width = window.prompt("enter width");
+height = window.prompt("enter height");
 
 area = getArea(width, height);
 
+console.log("the area is:", area);
+
 function getArea(width,  height){
-  
+let result = height * width;
+
+return result;
+}
+
+// ternaary operator = shortcut for an 'if/else statement'
+//                      takes 3 operands
+
+// 1. a condition with ?
+// 2. expression if True :
+// 3. expression if False
+
+//condition ? exp. IfTrue : exp. IFFalse
+
+let rava = checkAge(22);
+
+function checkAge(age){
+  age = 22 ? true : false;
+  return
 }

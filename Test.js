@@ -335,3 +335,14 @@ checkWinner(false)
 function checkWinner(win){
   win ? console.log("You WIN!") : console.log("You LOSE!"); 
 }
+
+// Templates literals = delimited with (`)
+// instead of double or single quotes, allows embedded variables and expression
+
+
+let x = "James";
+let y = 22;
+let z = "JavaScript";
+
+let text = `My name ${x} and i am ${y}  years old, learning ${z} which i could have done earlier, if only i had common sense back then.`;
+document.getElementById("myLabel").innerHTML = text;

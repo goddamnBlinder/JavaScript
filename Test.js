@@ -265,7 +265,10 @@ console.log("BOOM!");
 // }
 
 
-// Function 
+// Function = Define code once, and use it many times.
+// to perform some Code, call the function name 
+
+
 
 startProgram();
 /* local variables inside a function */
@@ -273,11 +276,11 @@ startProgram();
 
 function startProgram(){
   let nam = "James";
-  let a = 21;
+  let a = 22;
 
-}
 
 happyBirthday(nam, a);
+}
 
 
 function happyBirthday(a, b){
@@ -288,3 +291,17 @@ function happyBirthday(a, b){
    console.log("You are", b ,"years old");
 }
 
+// return = returns a value back to the place where you invoked a function 
+
+let height;
+let width;
+let: area;
+
+width: window.prompt("enter width");
+height: window.prompt("enter height");
+
+area = getArea(width, height);
+
+function getArea(width,  height){
+  
+}

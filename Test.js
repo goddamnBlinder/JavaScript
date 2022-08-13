@@ -293,22 +293,25 @@ function happyBirthday(a, b){
 
 // return = returns a value back to the place where you invoked a function 
 
-let height;
-let width;
-let area;
+// let height;
+// let width;
+// let area;
 
-width = window.prompt("enter width");
-height = window.prompt("enter height");
+// width = window.prompt("enter width");
+// height = window.prompt("enter height");
 
-area = getArea(width, height);
+// area = getArea(width, height);
 
-console.log("the area is:", area);
+// console.log("the area is:", area);
 
-function getArea(width,  height){
-let result = height * width;
+// function getArea(width,  height){
+// let result = height * width;
 
-return result;
-}
+// return result;
+// }
+
+
+
 
 // ternaary operator = shortcut for an 'if/else statement'
 //                      takes 3 operands
@@ -320,8 +323,15 @@ return result;
 //condition ? exp. IfTrue : exp. IFFalse
 
 let rava = checkAge(22);
+console.log(rava);
 
 function checkAge(age){
-  age = 22 ? true : false;
-  return
+return  age >= 12 ? true : false;
+
+}
+
+checkWinner(false)
+
+function checkWinner(win){
+  win ? console.log("You WIN!") : console.log("You LOSE!"); 
 }

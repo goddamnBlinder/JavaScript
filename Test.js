@@ -344,7 +344,7 @@ let x = "James";
 let y = 22;
 let z = "JavaScript";
 
-let text = `My name ${x} and i am ${y}  years old, learning ${z} which i could have done earlier, if only i had common sense back then.`;
+let text = `My name ${x} and i am ${y}  years old, learning ${z} which i could have done earlier, if only i had common sense back then 😪.`;
 document.getElementById("myLabel").innerHTML = text;
 
 
@@ -360,4 +360,16 @@ global variable = are decleared outside any function (if global, var will CHANGE
 
 let numb = 123456.789;
  numb = numb.toLocaleString('en-US');// US english
+ numb = numb.toLocaleString('hi-IN');// hindi
+ numb = numb.toLocaleString('de-DE');// G.Br.t
+ 
+ 
+ numb = numb.toLocaleString("en-US", {style: "currency", currency: "USD"});
+
+
+ numb = numb.toLocaleString( undefined, {style: "percent"});
+ 
+ 
  console.log(numb);
+
+ //                                                                A  SIMPLE CONVENTER (Didn't know what i was tho 😅 )

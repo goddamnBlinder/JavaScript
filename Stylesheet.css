@@ -7,12 +7,9 @@
 }
 
 body {
-
-
+    position: flex;
     align-items: center;
-
     height: 100vh; 
-
     font-weight: bold;
 }
 
@@ -78,50 +75,34 @@ h2{
 .btn:hover{
     background-color: rgba(10, 174, 125, 0.784);
     color: white;
-} */
-
-#countLabel {
-    display: block;
-    text-align: center;
-    font: 23rem;
-    float: center;
-}
-#Container{
-    flex: content;
-    display: block;
-    flex-direction: inherit;
-    font-size: 32px;
-}
-
-p {
-    flex: content;
-    display: block;
-    flex-direction: inherit;
-    font-size: 32px;
-}
-
-
-
-button {
-    
-    aspect-ratio: 2/1;
-}
-
-#checkboxLabel, #myCheckbox {
-  margin: 0 auto;
-  display: block;
-  align-items: center;
-  float: center;
-
 } 
-#myRect{
+
+
+   
+.converter{
+    
+    background-color: rgba(10, 174, 125, 0.784);
+    display: flex;
+    line-height: 4rem;
+    width: 210px;
+    height: 450px;
+    border:solid 4px black;
     margin: 0 auto;
-    float: bottom;
-    padding-right: 200px;
+       
     
 }
 
-.Payment{
-    display: inline-flex;
-    float: top;
+.convertor{
+    flex-direction: column;
+    padding: 14px;
+}
+
+#sumbmitButton{
+    width: 7rem;
+    padding: 0.5rem;
+    font-size: 10px;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    margin: 1rem auto;
 }

@@ -372,7 +372,42 @@ let numb = 123456.789;
  
  console.log(numb);
 
- //                                       A  SIMPLE CONVENTER (Didn't know what i was  doing tho 😅 )
+ //                                       A  SIMPLE CONVENTER (Didn't know what i was doing tho 😅 )
 
- 
 
+
+document.getElementById("sumbmitButton").onclick = function(){
+  let temperature;
+
+  if(document.getElementById("cButton").checked){
+
+    temperature = document.getElementById("textBox").value;
+    temperature = Number(temperature);
+    temperature = toCelsius(temperature);
+
+    // The parseFloat() & toFixed(3) is to set the number of decimals to be display
+    document.getElementById("tempLabel").innerHTML = parseFloat(temperature.toFixed(3)) + "⁰C";
+
+  }
+
+  else if(document.getElementById("fButton").checked){
+
+    temperature = document.getElementById("textBox").value;
+    temperature = Number(temperature);
+    temperature = toFahrenheit(temperature)
+    
+    document.getElementById("tempLabel").innerHTML = parseFloat(temperature.toFixed(3)) + "⁰F";
+
+
+  }
+  else{
+    document.getElementById("tempLabel").innerHTML = "Select a Unit";
+  }
+}
+
+function toCelsius(temperature){
+    return (temperature - 32) * (5/9);
+}
+function toFahrenheit(temperature){
+    return temperature * 9/5 + 32;
+}

@@ -424,3 +424,8 @@ fruits.push("lemon");  //add an element
 fruits.pop(); // remove last element
 fruits.unshift('mango'); // add element to index(0)
 fruits.shift(); // removes element from index(0)
+
+let length = fruits.length
+let index = fruits.indexOf('starFruit')
+
+console.log(index);

@@ -62,7 +62,7 @@ function resetCount(){
   i.textContent = 0;
 }
 
-                                                 //  Radom Number
+                                                 //  Radom Number  guess 🥰
 
 
 let changeButton = document.getElementById("RandomBtn");
@@ -115,7 +115,7 @@ if(online){
 else {
   console.log("you are offline");
 }
-
+//                                                 PAYMENT METHOD 😘
 
 
 document.getElementById('btn').onclick = function(){
@@ -372,4 +372,7 @@ let numb = 123456.789;
  
  console.log(numb);
 
- //                                                                A  SIMPLE CONVENTER (Didn't know what i was tho 😅 )
+ //                                       A  SIMPLE CONVENTER (Didn't know what i was  doing tho 😅 )
+
+ 
+

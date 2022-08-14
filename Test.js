@@ -313,7 +313,7 @@ function happyBirthday(a, b){
 
 
 
-// ternaary operator = shortcut for an 'if/else statement'
+// ternary operator = shortcut for an 'if/else statement'
 //                      takes 3 operands
 
 // 1. a condition with ?
@@ -346,3 +346,18 @@ let z = "JavaScript";
 
 let text = `My name ${x} and i am ${y}  years old, learning ${z} which i could have done earlier, if only i had common sense back then.`;
 document.getElementById("myLabel").innerHTML = text;
+
+
+/* NOTE:  varaible scope = where a variable is accesible 
+let = variable are limited to a block scope {}
+let = variable are limited to a function (){}
+
+global variable = are decleared outside any function (if global, var will CHANGE browser's window properties).*/
+
+
+
+// toLcalString() = returns a string with a language sensitive representation of this number
+
+let numb = 123456.789;
+ numb = numb.toLocaleString('en-US');// US english
+ console.log(numb);

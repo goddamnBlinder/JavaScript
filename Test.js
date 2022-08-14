@@ -395,7 +395,7 @@ document.getElementById("sumbmitButton").onclick = function(){
     temperature = document.getElementById("textBox").value;
     temperature = Number(temperature);
     temperature = toFahrenheit(temperature)
-    
+
     document.getElementById("tempLabel").innerHTML = parseFloat(temperature.toFixed(3)) + "⁰F";
 
 
@@ -411,3 +411,16 @@ function toCelsius(temperature){
 function toFahrenheit(temperature){
     return temperature * 9/5 + 32;
 }
+
+
+// Array = think of it as varaible that can store multiple values
+
+
+
+let fruits = ['apple', 'orange', 'kiwi', 'sworwanshop!', 'blueberry', 'Raspberries'];
+// console.log(fruits[5]);
+
+fruits.push("lemon");  //add an element
+fruits.pop(); // remove last element
+fruits.unshift('mango'); // add element to index(0)
+fruits.shift(); // removes element from index(0)

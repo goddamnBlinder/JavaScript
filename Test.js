@@ -429,3 +429,4 @@ let length = fruits.length
 let index = fruits.indexOf('starFruit')
 
 console.log(index);
+

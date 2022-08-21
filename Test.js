@@ -430,3 +430,5 @@ let index = fruits.indexOf('starFruit')
 
 console.log(index);
 
+// array.map() = executes a provided  callback function once for each array element AND creates a new array
+

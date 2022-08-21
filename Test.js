@@ -432,3 +432,19 @@ console.log(index);
 
 // array.map() = executes a provided  callback function once for each array element AND creates a new array
 
+let nUmbers = [1, 2, 3, 4, 5];
+let squares = nnumbers.map(squares);
+
+
+squares.forEach(print)
+
+
+function squares(element) {
+  return Math.pow(element,2);
+  
+}
+
+function print(element) {
+  console.log(element)
+  
+}

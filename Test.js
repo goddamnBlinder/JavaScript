@@ -469,3 +469,30 @@ function checkaGes(element){
 function print(element) {
   console.log(element);
 }
+
+// array.reduce() = reduces an array to a single value
+
+let prices = [5, 15, 20, 25, 30]
+total = prices.reduce(checkOut);
+
+console.log(`the total prices in the reduced array is $${total}`)
+
+function checkOut(total, element) {
+  return total + element;
+}
+
+// Sorting of Arrays 
+
+let grades =  [97, 30, 63, 86, 74, 55,]
+
+grades = grades.sort(descendingSort);
+
+grades = forEach(print)
+
+
+function print(element){
+  console.log(element);
+}
+function descendingSort(x, y){
+  return y - x,
+}

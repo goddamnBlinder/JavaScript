@@ -413,7 +413,7 @@ function toFahrenheit(temperature){
 }
 
 
-// Array = think of it as varaible that can store multiple values
+//                                     😥😥😯       ARRAYS   🤩🤩 = think of it as varaible that can store multiple values
 
 
 
@@ -432,19 +432,40 @@ console.log(index);
 
 // array.map() = executes a provided  callback function once for each array element AND creates a new array
 
-let nUmbers = [1, 2, 3, 4, 5];
-let squares = nUmbers.map(square);
+let countable = [1, 2, 3, 4, 5];
+let shape = countable.map(cubic);
+let shapes = countable.map(square);
 
 
-square.forEach(print)
+shape.forEach(print)
+shapes.forEach(print)
 
 
-function squares(element) {
+function square(element) {
   return Math.pow(element,2);
+}
+
+function cubic(element) {
+  return Math.pow(element,3);
   
 }
 
 function print(element) {
   console.log(element)
   
+}
+
+// array.filter() = creates a new array with all elements that passes the test provided by a function
+
+let aGes = [18, 14, 21, 56, 80];
+let adult = aGes.filter(checkaGes);
+
+adult.forEach(print);
+
+function checkaGes(element){
+    return element >= 18; 
+}
+
+function print(element) {
+  console.log(element);
 }

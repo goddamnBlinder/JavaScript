@@ -513,3 +513,14 @@ const greeting = function () {
 
 greeting();
 
+// arrow functions = compact alternative to a traditional function
+// =>
+
+const goodNight = function (userNam){
+  console.log(`Hola Amigo ${userNam} `);
+}
+goodNight("Diawara")
+
+const goodNite = (usaNam) =>  console.log(`Hola Amigo ${usaNam} `);
+
+goodNite("Diawara")

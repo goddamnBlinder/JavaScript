@@ -504,6 +504,7 @@ function ascendingSort(x, y){
   return x - y;
 }
 
+
 // function expression = function without any name (anonymous function, avoid polluting the whole scoop, write it, then forget abiut it) 
 
 
@@ -513,6 +514,10 @@ const greeting = function () {
 
 greeting();
 
+
+
+
+
 // arrow functions = compact alternative to a traditional function
 // =>
 
@@ -521,6 +526,38 @@ const goodNight = function (userNam){
 }
 goodNight("Diawara")
 
+//e.g
+
 const goodNite = (usaNam) =>  console.log(`Hola Amigo ${usaNam} `);
 
 goodNite("Diawara")
+
+// if you have only one arguement you don't need to close it in any parenthesis.
+
+const percentage = function (x , y){
+  return x / y * 100;
+}
+
+console.log(`${percentage(40, 1000)}%`);
+
+//e.g 2
+
+const percenTage =  (x , y) => x / y * 100;
+
+console.log(`${percenTage(40, 1000)}%`);
+
+
+//e.g 3
+
+let studentGrades = [23, 45, 78, 89, 97, 100];
+
+studentGrades.sort(desCending);
+studentGrades.forEach(print);
+
+function desCending(x, y){
+  return y - x;
+}
+
+function print(element){
+  console.log(element);
+}

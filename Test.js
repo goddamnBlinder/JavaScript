@@ -483,11 +483,11 @@ function checkOut(total, element) {
 
 // Sorting of Arrays 
 
-let grades =  [97, 30, 63, 86, 74, 55,]
+let grades =  [1, 6, 3, 2, 4, 5,]
 
 grades = grades.sort(descendingSort);
 
-grades = forEach(print)
+grades.forEach(print)
 
 function descendingSort(x, y){
   return y - x;
@@ -496,3 +496,20 @@ function descendingSort(x, y){
 function print(element){
   console.log(element);
 }
+
+grades = grades.sort(ascendingSort);
+
+
+function ascendingSort(x, y){
+  return x - y;
+}
+
+// function expression = function without any name (anonymous function, avoid polluting the whole scoop, write it, then forget abiut it) 
+
+
+const greeting = function () {
+  console.log('Hello!'); 
+}
+
+greeting();
+

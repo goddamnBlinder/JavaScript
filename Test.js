@@ -561,3 +561,17 @@ function desCending(x, y){
 function print(element){
   console.log(element);
 }
+
+//
+
+let studentgrades = [23, 45, 78, 89, 97, 100];
+
+studentGrades.sort( (x, y) =>{
+  return y - x;
+}
+);
+studentGrades.forEach( element =>{
+  console.log(element);
+});
+
+

@@ -575,3 +575,13 @@ studentGrades.forEach( element =>{
 });
 
 
+//                         😅 How to Shuffle the elements of an array 
+
+
+let cards =['A', '2', '3', '4', '5', '6', '7', '8', '9', 'k', 'Q']
+
+Shuffle(cards);
+
+function Shuffle(array){
+
+}

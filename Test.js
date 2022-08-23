@@ -575,13 +575,29 @@ studentGrades.forEach( element =>{
 });
 
 
-//                         😅 How to Shuffle the elements of an array 
+//                         😅 How to Shuffle the elements of an array (How a cards mixer works)
 
 
-let cards =['A', '2', '3', '4', '5', '6', '7', '8', '9', 'k', 'Q']
+let cards = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'k', 'Q']
 
 Shuffle(cards);
 
-function Shuffle(array){
+// console.log(cards);
+cards.forEach(cards => console.log(cards))
 
+function Shuffle(array){
+  let currentIndex = array.length
+
+
+  while (currentIndex != 0) {
+    let randomIndex = Math.floor(Math.random() * array.length)
+   
+    currentIndex --;
+
+    let temps = array[currentIndex];
+    array[currentIndex] = array[randomIndex]
+    array[randomIndex] = temps
+
+  }
+  return array;
 }

@@ -609,7 +609,9 @@ function Shuffle(array){
 let user = 'James';
 let userIndox = 7;
 
-function login(){
+
+
+function login(){}
 
 function displayuser(){
 console.log(`hello there,${user}`)
@@ -619,4 +621,3 @@ function displayuserInbox(){
 console.log(`You have ${userIndox} new messages`)
 }
 
-}

@@ -586,7 +586,7 @@ Shuffle(cards);
 cards.forEach(cards => console.log(cards))
 
 function Shuffle(array){
-  let currentIndex = array.length
+  let currentIndex = array.length;
 
 
   while (currentIndex != 0) {
@@ -596,8 +596,27 @@ function Shuffle(array){
 
     let temps = array[currentIndex];
     array[currentIndex] = array[randomIndex]
-    array[randomIndex] = temps
+    array[randomIndex] = temps;
 
   }
   return array;
+}
+
+
+//Nested Functions = Functions inside other functions. Outer functions have access to inner functions, inner functions are "hidden" from outside the outer function.They are used in closures 
+
+
+let user = 'James';
+let userIndox = 7;
+
+function login(){
+
+function displayuser(){
+console.log(`hello there,${user}`)
+}
+
+function displayuserInbox(){
+console.log(`You have ${userIndox} new messages`)
+}
+
 }

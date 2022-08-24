@@ -609,9 +609,13 @@ function Shuffle(array){
 let user = 'James';
 let userIndox = 7;
 
+login();
 
 
-function login(){}
+function login(){
+  displayuser();
+  displayuserInbox();
+}
 
 function displayuser(){
 console.log(`hello there,${user}`)

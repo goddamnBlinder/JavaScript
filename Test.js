@@ -412,6 +412,15 @@ function toFahrenheit(temperature){
     return temperature * 9/5 + 32;
 }
 
+// Function Expression   =  function without a name (anonymous function) aviod polluting the global scope with names. Write it, then forget about it.
+const greet = function (){
+  console.log('Hello');
+}
+
+greet();
+
+
+
 
 //                                     😥😥😯       ARRAYS   🤩🤩 = think of it as varaible that can store multiple values
 
@@ -607,7 +616,7 @@ function Shuffle(array){
 
 
 let user = 'James';
-let userIndox = 7;
+let userIndox = 3;
 
 login();
 
@@ -624,4 +633,6 @@ console.log(`hello there,${user}`)
 function displayuserInbox(){
 console.log(`You have ${userIndox} new messages`)
 }
+
+
 

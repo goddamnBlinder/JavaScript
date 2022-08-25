@@ -645,13 +645,22 @@ const mall = new Map([
 
 
 
-// // the get method = to sum up the total.
-// let shoppingCart = 0;
-// shoppingCart += mall.get('skirt');
-// shoppingCart += mall.get('canvas');
-// shoppingCart += mall.get('sandals');
-// console.log(`here's the total cart $:${shoppingCart}`);
+// the get method = to sum up the total.
+let shoppingCart = 0;
+shoppingCart += mall.get('skirt');
+shoppingCart += mall.get('canvas');
+shoppingCart += mall.get('sandals');
+console.log(`here's the total cart $:${shoppingCart}`);
 
-
+//set method  (To add)
+mall.set("Hat", 70)
+// mall.delete("Hat")
+console.log(mall.has('cap'));//   for Boolean purposes (has properties)
+console.log(mall.size);// total size of items
 
 mall.forEach((value, key) => console.log(`${key} $${value}`));
+
+
+
+//             OBJECT 🤫🐱‍👤🐱‍🏍
+// A group of Properties and methods (properties = what it has) (Methods = ways it does)

@@ -634,5 +634,6 @@ function displayuserInbox(){
 console.log(`You have ${userIndox} new messages`)
 }
 
+// Map = objects thats
 
 

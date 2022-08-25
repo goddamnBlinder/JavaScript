@@ -439,7 +439,7 @@ let index = fruits.indexOf('starFruit')
 
 console.log(index);
 
-// array.map() = executes a provided  callback function once for each array element AND creates a new array
+// array.map() = executes a provided  callback function once for each array element and creates a new array
 
 let countable = [1, 2, 3, 4, 5];
 let shape = countable.map(cubic);
@@ -766,11 +766,13 @@ class student{
       console.log(`${this.name} thinks he's studying, werey`);
     }
 }
-const stu = new student
-stu.name = "Jammieson";
-stu.age = 23;
-stu.gpa = 2.29;
+const stu = new student("Andrew", 23, 3.7)
+const stu2 = new student("Thomas", 22, 3.17 )
+const stu3 = new student("Sandy", 21, 4.2)
+
 
 
 console.log(stu);
+console.log(stu2);
+console.log(stu3);
 // stu.study();

@@ -717,3 +717,7 @@ const car = {
     console.log(`you drive a ${this.model}`);
   }
 }
+
+car.drive();
+//                                                        CLASS😎
+//

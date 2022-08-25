@@ -662,7 +662,7 @@ mall.forEach((value, key) => console.log(`${key} $${value}`));
 
 
 
-//             OBJECT 🤫🐱‍👤🐱‍🏍
+//                                                          OBJECTS 🤫🐱‍👤🐱‍🏍
 // A group of Properties and methods (properties = what it has) (Methods = ways it does)
  
 
@@ -681,5 +681,39 @@ mall.forEach((value, key) => console.log(`${key} $${value}`));
 }
 console.log(plant.name);
 console.log(plant.age);
-console.log(plant.germinate());
 console.log(plant.color);
+
+plant.bareFruit();
+
+
+const plant2 = {
+  name: 'lime',
+  color: 'yellow',
+  age: 10,
+
+  germinate: function(){
+    console.log("a growing process for the seed");
+  },
+
+  bareFruit: function(){
+    console.log("when it bares fruits");
+  }
+}
+console.log(plant2.name);
+console.log(plant2.age);
+console.log(plant2.color);
+
+plant2.bareFruit();
+
+
+// this = this is a keyword that gives reference to an element contained in an object, it depends on the immediate context where they are used  
+
+const car = {
+  model: "Toyota",
+  color: 'black',
+  year:2027,
+
+  drive: function(){
+    console.log(`you drive a ${this.model}`);
+  }
+}

@@ -664,3 +664,22 @@ mall.forEach((value, key) => console.log(`${key} $${value}`));
 
 //             OBJECT 🤫🐱‍👤🐱‍🏍
 // A group of Properties and methods (properties = what it has) (Methods = ways it does)
+ 
+
+ const plant = {
+  name: 'orange',
+  color: 'duh, orange',
+  age: 12,
+
+  germinate: function(){
+    console.log("a growing process for the seed");
+  },
+
+  bareFruit: function(){
+    console.log("when it bares fruits");
+  }
+}
+console.log(plant.name);
+console.log(plant.age);
+console.log(plant.germinate());
+console.log(plant.color);

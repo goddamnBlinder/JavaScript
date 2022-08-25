@@ -634,6 +634,24 @@ function displayuserInbox(){
 console.log(`You have ${userIndox} new messages`)
 }
 
-// Map = objects thats
+// Map = objects that holds key-value pairs of any data type
+
+const mall = new Map([
+['skirt', 20],
+['shoe', 30],
+['canvas', 40],
+['sandals', 50],
+]);
 
 
+
+// the get method = to sum up the total.
+let shoppingCart = 0;
+shoppingCart += mall.get('skirt');
+shoppingCart += mall.get('canvas');
+shoppingCart += mall.get('sandals');
+console.log(`here's the total cart $:${shoppingCart}`);
+
+
+
+mall.forEach((value, key) => console.log(`${key} $${value}`));

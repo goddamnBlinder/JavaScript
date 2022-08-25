@@ -645,12 +645,12 @@ const mall = new Map([
 
 
 
-// the get method = to sum up the total.
-let shoppingCart = 0;
-shoppingCart += mall.get('skirt');
-shoppingCart += mall.get('canvas');
-shoppingCart += mall.get('sandals');
-console.log(`here's the total cart $:${shoppingCart}`);
+// // the get method = to sum up the total.
+// let shoppingCart = 0;
+// shoppingCart += mall.get('skirt');
+// shoppingCart += mall.get('canvas');
+// shoppingCart += mall.get('sandals');
+// console.log(`here's the total cart $:${shoppingCart}`);
 
 
 

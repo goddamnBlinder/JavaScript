@@ -720,4 +720,57 @@ const car = {
 
 car.drive();
 //                                                        CLASS😎
-//
+//A blueprint for creating objects, defines what properties and methods they have to use a constructor for a unique property.
+
+class player  {
+score = 0;
+pause(){
+  console.log("Paused");
+   return  this.exist();  //
+}
+exist(){
+  console.log("Exist?, will automatically forfeit");
+}
+
+}
+
+// objects created to define and express the class created above.
+const play =  new player();
+const play2 =  new player();
+const play3 =  new player();
+
+play.score ++;
+play2.score = 2
+play3.score = 3
+
+console.log(play.score);
+console.log(play2.score);
+console.log(play3.score);
+
+play.pause();
+// play.exist();
+
+//constructors = special method off a class, accepts arguments and assigns properties
+
+
+
+
+class student{
+  constructor(name, age, gpa){
+        this.name = name
+        this.age = age
+        this.gpa = gpa
+  }
+
+    study(){
+      console.log(`${this.name} thinks he's studying, werey`);
+    }
+}
+const stu = new student
+stu.name = "Jammieson";
+stu.age = 23;
+stu.gpa = 2.29;
+
+
+console.log(stu);
+// stu.study();

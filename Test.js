@@ -772,9 +772,74 @@ const stu3 = new student("Sandy", 21, 4.2)
 
 
 
-console.log(stu);
-console.log(stu2);
-console.log(stu3);
+console.log(stu.name);
+console.log(stu.age);
+console.log(stu.gpa);
 stu.study();
+
+console.log(stu2.name);
+console.log(stu2.age);
+console.log(stu2.gpa);
 stu2.study();
+
+console.log(stu3.name);
+console.log(stu3.age);
+console.log(stu3.gpa);
 stu3.study();
+
+//static = belongs to the class, not the objects 
+//properties: useful for caches, fixed-configuration
+// methods: useful for utility function
+
+class Car {
+
+  numberOfCars = 0;
+constructor(model){
+  this.model = model;
+  this.numberOfCars ++;
+}
+startRace(){
+  console.log('3...2....1....GO!');
+}
+
+}
+const car1 = new Car("pegoiut");
+const car2 = new Car("Bmw");
+const car3 = new Car("Kia")
+
+console.log(car1.numberOfCars)
+console.log(car2.numberOfCars)
+console.log(car3.numberOfCars)
+
+car1.startRace(this.model);
+
+
+//Inheritance = this is where a child can inherit all the method and properties from another class.
+class animal{
+super.
+
+}
+
+
+class Rabbit {
+  alive = true
+  name = "rabbit";
+  eat = function(){
+    console.log("the process of taking in mineral res. to release energy");
+  }
+  run = function(){
+    console.log("running");
+    }
+}
+
+class Hawk {
+  alive = true
+  name = "hawk";
+  eat = function(){
+    console.log("the process of taking in mineral res. to release energy");
+  }
+  fly = function(){
+    console.log("flying");
+    }
+}
+console.log(Hawk.name);

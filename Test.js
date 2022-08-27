@@ -750,11 +750,11 @@ console.log(play3.score);
 play.pause();
 // play.exist();
 
-//constructors = special method off a class, accepts arguments and assigns properties
+//constructors = special method of a class, accepts arguments and assigns properties
 
 
 
-
+ 
 class student{
   constructor(name, age, gpa){
         this.name = name
@@ -775,4 +775,6 @@ const stu3 = new student("Sandy", 21, 4.2)
 console.log(stu);
 console.log(stu2);
 console.log(stu3);
-// stu.study();
+stu.study();
+stu2.study();
+stu3.study();

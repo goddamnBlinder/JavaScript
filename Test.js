@@ -815,10 +815,10 @@ car1.startRace(this.model);
 
 
 //Inheritance = this is where a child can inherit all the method and properties from another class.
-class animal{
-super.
+// class animal{
+// super = 
 
-}
+// }
 
 
 class Rabbit {

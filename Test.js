@@ -793,12 +793,13 @@ stu3.study();
 
 class Car {
 
-  numberOfCars = 0;
+ static  numberOfCars = 2;
+ 
 constructor(model){
   this.model = model;
   this.numberOfCars ++;
 }
-startRace(){
+ static startRace(){
   console.log('3...2....1....GO!');
 }
 
@@ -811,35 +812,53 @@ console.log(car1.numberOfCars)
 console.log(car2.numberOfCars)
 console.log(car3.numberOfCars)
 
-car1.startRace(this.model);
+
 
 
 //Inheritance = this is where a child can inherit all the method and properties from another class.
-// class animal{
-// super = 
-
-// }
-
-
-class Rabbit {
+class animal{
   alive = true
-  name = "rabbit";
   eat(){
     console.log("the process of taking in mineral res. to release energy");
   }
+}
+
+
+class Rabbit extends animal{
+
+  name = "rabbit";
+
   run(){
     console.log("running");
     }
 }
 
-class Hawk {
-  alive = true
+class Hawk extends animal{
+
   name = "hawk";
-  eat(){
-    console.log("the process of taking in mineral res. to release energy");
-  }
+  
   fly(){
     console.log("flying");
     }
 }
-console.log(Hawk.name);
+const rodent = new Rabbit();
+const bird = new Hawk();
+
+console.log(rodent.alive);
+console.log(bird.alive);
+rodent.eat();
+rodent.run();
+
+//super = refers to the parent class. commonly used to invoke constructor of a parent class.
+ class Mammals{
+
+ }
+class Monkey extends Mammals{
+ 
+
+}
+
+class Dog extends Mammals{
+
+ 
+  }

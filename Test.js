@@ -787,7 +787,7 @@ console.log(stu3.age);
 console.log(stu3.gpa);
 stu3.study();
 
-//static = belongs to the class, not the objects 
+//static = A keyword belongs to the class, not the objects 
 //properties: useful for caches, fixed-configuration
 // methods: useful for utility function
 

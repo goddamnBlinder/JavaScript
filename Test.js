@@ -824,10 +824,10 @@ super.
 class Rabbit {
   alive = true
   name = "rabbit";
-  eat = function(){
+  eat(){
     console.log("the process of taking in mineral res. to release energy");
   }
-  run = function(){
+  run(){
     console.log("running");
     }
 }
@@ -835,10 +835,10 @@ class Rabbit {
 class Hawk {
   alive = true
   name = "hawk";
-  eat = function(){
+  eat(){
     console.log("the process of taking in mineral res. to release energy");
   }
-  fly = function(){
+  fly(){
     console.log("flying");
     }
 }

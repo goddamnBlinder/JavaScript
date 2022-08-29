@@ -851,14 +851,27 @@ rodent.run();
 
 //super = refers to the parent class. commonly used to invoke constructor of a parent class.
  class Mammals{
-
+    constructor(name, age){
+      this.name = name;
+      this.age = age;
+    }
  }
 class Monkey extends Mammals{
- 
-
+ constructor (name, age, climbSpeed ){
+      super(name, age)
+      this.climbSpeed = climbSpeed;
+ }
 }
 
 class Dog extends Mammals{
-
- 
+  constructor(name, age, barkSound){
+    super(name, age)
+    this.barkSound = barkSound;
   }
+  }
+ 
+  const climb = new Monkey("monkey", 1, 21 + "km/h");
+  const chihuahua = new Dog ("Chihuahua", 2, 13 + "echo per seconds");
+
+  console.log(climb);
+  console.log(chihuahua.barkSound);

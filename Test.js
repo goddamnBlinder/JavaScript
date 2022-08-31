@@ -875,3 +875,35 @@ class Dog extends Mammals{
 
   console.log(climb);
   console.log(chihuahua.barkSound);
+  console.log(climb.climbSpeed);   
+
+// get = binds an object property to a function when that property is accessed
+// the underscore indicates that, the element is been protected
+
+class joules {
+  constructor(power, gas){
+   this._power = power;
+   this._gas = 67;
+   Number(this._gas);
+  }
+  get power(){
+    return `This particular power is: ${this._power}joules`;
+  }
+
+  get gas(){
+
+         return `Your gas is @:(${this._gas / 50 * 100})%`;  
+        }
+        
+        set gas(value){
+          
+        
+ }
+}
+
+const veh = new joules (12); 
+veh.power = 122222;
+
+
+console.log(veh.power);
+console.log(veh.gas);

@@ -883,7 +883,7 @@ class Dog extends Mammals{
 class joules {
   constructor(power, gas){
    this._power = power;
-   this._gas = 67;
+   this._gas = 3000000;
    Number(this._gas);
   }
   get power(){
@@ -892,12 +892,19 @@ class joules {
 
   get gas(){
 
-         return `Your gas is @:(${this._gas / 50 * 100})%`;  
+         return ` ${this._gas}L (${this._gas / 50 * 100})%`;  
         }
-        
-        set gas(value){
-          
-        
+ //set = binds an objects property is assigned a value
+ 
+ 
+ set gas(value){
+   if(value >= 50){
+     value = 50;
+    }
+    else if(value < 0){
+      value = 0;
+    }      
+    this._gas = value;
  }
 }
 
@@ -907,3 +914,31 @@ veh.power = 122222;
 
 console.log(veh.power);
 console.log(veh.gas);
+
+//passing objects to a function as an argument in a class
+
+
+class Bike {
+
+  constructor(model, year, color){
+    this.model = model;
+    this.year = year;
+    this.color = color;
+  }
+}
+let ride= new Bike ("Qlink", 2014, "black")
+let secondRide= new Bike ("Qasa", 2017, "red")
+
+displayInfo(ride);
+changeColor(secondRide, "pink")
+
+
+function displayInfo(car) {
+  console.log(car.model);
+  console.log(car.year);
+  console.log(car.color);
+}
+function changeColor(ride, color){
+ ride.color = color;
+ console.log(ride.color);
+}

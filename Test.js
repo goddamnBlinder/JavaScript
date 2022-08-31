@@ -918,7 +918,7 @@ console.log(veh.gas);
 //passing objects to a function as an argument in a class
 
 
-class Bike {
+class bike {
 
   constructor(model, year, color){
     this.model = model;
@@ -926,11 +926,10 @@ class Bike {
     this.color = color;
   }
 }
-let ride= new Bike ("Qlink", 2014, "black")
-let secondRide= new Bike ("Qasa", 2017, "red")
+let ride= new bike ("Qlink", 2014, "black")
+let secondRide= new bike ("Qasa", 2017, "red")
 
 displayInfo(ride);
-changeColor(secondRide, "pink")
 
 
 function displayInfo(car) {
@@ -938,7 +937,9 @@ function displayInfo(car) {
   console.log(car.year);
   console.log(car.color);
 }
-function changeColor(ride, color){
- ride.color = color;
- console.log(ride.color);
+
+changeColor(secondRide, "pink");
+function changeColor(bike, color){
+ bike.color = color;
+
 }

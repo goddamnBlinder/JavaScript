@@ -930,6 +930,7 @@ let ride= new bike ("Qlink", 2014, "black")
 let secondRide= new bike ("Qasa", 2017, "red")
 
 displayInfo(ride);
+changeColor(ride, "pink"); 
 
 
 function displayInfo(car) {
@@ -938,8 +939,35 @@ function displayInfo(car) {
   console.log(car.color);
 }
 
-changeColor(secondRide, "pink");
-function changeColor(bike, color){
- bike.color = color;
-
+function changeColor(car, color){
+ car.color = color;
 }
+
+//                ARRAYS OF OBJECTS   😮😮
+class food {
+  constructor(name, process, crop){
+    this.name = name;
+    this.process = process;
+    this.crop = crop;
+  }
+eat(){
+  console.log(`${this.name} dey enter belle for like ${this.process} now`);
+}
+}
+ let chop = new food("garri 🥰", 2 + "hr", "tubber crop");
+ let chops = new food("dodo", 1 + "hr", "cash crop");
+ let chopinson = new food("abgabo", 30 + "mins", "something_else");
+
+ eatery = [chop, chops, chopinson]
+
+//  console.log(eatery[2]);
+//  eatery[1].eat();
+
+
+startEating();
+
+function startEating(ate){
+   for(const ate of eatery){
+       ate.eat();
+   }
+ }

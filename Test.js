@@ -964,10 +964,12 @@ eat(){
 //  eatery[1].eat();
 
 
-startEating();
+startEating(eatery);
 
 function startEating(ate){
    for(const ate of eatery){
        ate.eat();
    }
  }
+ //this function startEating, loop tru the elements of the array(eatery )
+ //and invoke the eat() {method}

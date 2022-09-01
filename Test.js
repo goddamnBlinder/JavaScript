@@ -996,5 +996,19 @@ function startEating(ate){
 
  let cads = [card1, card2, card3, card4, card5, card6, card7, card8]
 
- console.log(card1.value + card1.suit); //✖
- console.log(cads[0].value + cads[0].suit); //✔
+ console.log(card1.value + card1.suit); 
+ console.log(cads[0].value + cads[0].suit)  //✖
+
+
+ cads = [
+ new card ("A", "Hearts"),
+new card ("A", "Spades"),
+new card ("A", "Diamond"),
+new card ("A", "Clubs"),
+new card ("2", "Hearts"),
+new card ("2", "Spades"),
+ new card ("2", "Diamond"),
+ new card ("2", "Clubs")
+ ]
+
+cads.forEach( card => console.log(`${card.value} ${card.suit}`)) //✔

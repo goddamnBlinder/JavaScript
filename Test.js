@@ -973,3 +973,28 @@ function startEating(ate){
  }
  //this function startEating, loop tru the elements of the array(eatery )
  //and invoke the eat() {method}
+
+
+ // Anonymous objects = Less syntax, no need for unique names
+
+ class card {
+  constructor(value, suit){
+    this.value = value;
+    this.suit = suit;
+  }
+ }
+
+ let card1 = new card ("A", "Hearts")
+ let card2 = new card ("A", "Spades")
+ let card3 = new card ("A", "Diamond")
+ let card4 = new card ("A", "Clubs")
+ 
+ let card5 = new card ("2", "Hearts")
+ let card6 = new card ("2", "Spades")
+ let card7 = new card ("2", "Diamond")
+ let card8 = new card ("2", "Clubs")
+
+ let cads = [card1, card2, card3, card4, card5, card6, card7, card8]
+
+ console.log(card1.value + card1.suit); //✖
+ console.log(cads[0].value + cads[0].suit); //✔

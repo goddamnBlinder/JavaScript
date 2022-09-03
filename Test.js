@@ -1021,13 +1021,23 @@ cads.forEach( card => console.log(`${card.value} ${card.suit}`)) //✔
  // error = object with a description of something went wrong
  // throw = executes a user-defined error
 try {
-  let ipman = [1, 2, 3, 4, " ipman\'s legacy"]
-  console.lag(ipman);
+   let x = window.prompt("Enter a #?");
+   x = Number(x);
 
-  if(ipman = TypeError) throw "Something is wrong boss, catch your code again"
-  
-} catch (error) {
+   console.log(`${x} is a number `);
+
+   if(isNaN(x)) throw "it wasn't a number";
+   if (x == "") throw "left Blank";
+    
+
+}
+
+
+  catch (error) {
   console.log(error);
 }
 
+finally {
+  console.log("Finally, end of round 0ne. Please do so go through test2.js and test3.js and tell me what you think 😁");
+}
  

@@ -1015,13 +1015,14 @@ cads.forEach( card => console.log(`${card.value} ${card.suit}`)) //✔
 
  //                             ERROR 💢
  //objects with a discription of something went wrong.
- console.error("ipman");
+ console.error(" created error");
 
 
  // error = object with a description of something went wrong
  // throw = executes a user-defined error
+ 
 try {
-   let x = window.prompt("Enter a #?");
+  //  let x = window.prompt("Enter a Number?");
    x = Number(x);
 
    console.log(`${x} is a number `);
@@ -1038,6 +1039,10 @@ try {
 }
 
 finally {
-  console.log("Finally, end of round 0ne. Please do so go through test2.js and test3.js and tell me what you think 😁");
+  console.log("Finally, always display");
 }
+
+// finally always run wether the code is corect or not.
+
+//  Please, do so to go through test2.js and test3.js and tell me what you think 😁
  

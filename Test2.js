@@ -54,20 +54,57 @@
 //                          DATE OBJECTS 🕒🕚🔹🔳
 // The date object is used to work with date & times.
 
-// let date = new Date (0);
+let date = new Date (0);
 // let date = new Date (2023, 1, 2, 3, 4, 6);
 //    let date = new Date ("2034, may 15, 12:09:23")
 
-
+/*
 let year = date.getFullYear();
 let dayOfMonth = date.getDate();
 let Month = date.getMonth();
 let week = date.getDay();
 let hours = date.getHours();
 let minutes = date.getMinutes();
-let seconds = date.getSeconds
+let seconds = date.getSeconds();
+*/
 
 
-date = date.toLocaleString();
-document.getElementById('date').innerHTML = dayOfMonth;
+
+// date.setFullYear(2020);
+// date.setMonth(7);
+// date.setDate(17);
+// date.setHours(4)
+// date.setMinutes(17)
+// date.setSeconds(59);
+
+
+
+
+
+
+console.log(formatDate());
+
+// date = date.toLocaleString();
+document.getElementById("date").textContent = 12;
+//function to format the date
+timeForomat(date);
+formatDate(date);
+
+function formatDate(date){
+   let year = date.getFullYear();
+   let month = date.getMonth();
+   let day = date.getDate();
+
+
+
+return `${day}/${month}/${year}`
+
+}
+function timeForomat(date){
+  let hours = date.getHours();
+  let minutes = date.getMinutes()
+  let seconds = date.getSeconds()
+
+  return `${hours}:${minutes}:${seconds}`
+}
 

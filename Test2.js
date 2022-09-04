@@ -69,5 +69,5 @@ let seconds = date.getSeconds
 
 
 date = date.toLocaleString();
-document.getElementById('date').innerHTML = date;
+document.getElementById('date').innerHTML = dayOfMonth;
 

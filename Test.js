@@ -1015,12 +1015,12 @@ cads.forEach( card => console.log(`${card.value} ${card.suit}`)) //✔
 
  //                             ERROR 💢
  //objects with a discription of something went wrong.
- console.error(" created error");
+ console.error("I created this error");
 
 
  // error = object with a description of something went wrong
  // throw = executes a user-defined error
- 
+
 try {
   //  let x = window.prompt("Enter a Number?");
    x = Number(x);

@@ -54,7 +54,8 @@
 //                          DATE OBJECTS 🕒🕚🔹🔳
 // The date object is used to work with date & times.
 
-let date = new Date (0);
+// let date = new Date (0);
+let date = new Date ();
 // let date = new Date (2023, 1, 2, 3, 4, 6);
 //    let date = new Date ("2034, may 15, 12:09:23")
 
@@ -80,12 +81,10 @@ let seconds = date.getSeconds();
 
 
 
-
-
 console.log(formatDate());
 
 // date = date.toLocaleString();
-document.getElementById("date").textContent = 12;
+document.getElementById("date").innerHTML = date;
 //function to format the date
 timeForomat(date);
 formatDate(date);
@@ -94,6 +93,11 @@ function formatDate(date){
    let year = date.getFullYear();
    let month = date.getMonth();
    let day = date.getDate();
+   let amOrPm =   hours >= 12 ? "am" : "pm";
+
+   hours = (hours % 12) || 12;
+
+   
 
 
 
@@ -104,6 +108,12 @@ function timeForomat(date){
   let hours = date.getHours();
   let minutes = date.getMinutes()
   let seconds = date.getSeconds()
+  let amOrPm =   hours >= 12 ? "am" : "pm";
+
+  hours = (hours % 12) || 12;
+
+  
+
 
   return `${hours}:${minutes}:${seconds}`
 }

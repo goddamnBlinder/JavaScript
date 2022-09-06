@@ -56,9 +56,9 @@
 
 
 
-  let date = new Date();
+  // let date = new Date();
   
-  date = date.toLocaleString();
+  // date = date.toLocaleString();
   // console.log(date);
 
   // let dayOfMonth = date.getDate()
@@ -69,24 +69,19 @@
   // let seconds = date.getSeconds();
 
   // date.setFullYear(2026);
+  const time = document.getElementById("time");
 
 
-
-let time = document.getElementById("time").innerText = date;
-
-
+update();
+setInterval(update, 1000)
 
 
-formatDate();
-function formatDate(date){
-  let year = date.getFullyear();
-  let month = date.getMonth();
-  let day = date.getDate();
+ function update(){
+  let date = new Date();
+  time.innerHTML = formatTime(date);
 
-return `${day}/${month}/${year}`
 
-}
-
+  
 function formatTime(date){
   let hours = date.getHours();
   let minutes = date.getMinutes();
@@ -96,5 +91,20 @@ function formatTime(date){
   hours = (hours % 12) || 12;
   //converting to 12H CLOCK. 
 
-return `${seconds}:${minutes}:${hours} ${suffix}`
+return `${hours}:${minutes}:${seconds} ${suffix}`
 }
+
+ }
+
+formatDate();
+
+
+function formatDate(date){
+  let year = date.getFullyear();
+  let month = date.getMonth();
+  let day = date.getDate();
+
+return `${day}/${month}/${year}`
+
+}
+

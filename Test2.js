@@ -51,70 +51,50 @@
 // }
 
 
-//                          DATE OBJECTS 🕒🕚🔹🔳
+//                          DATE OBJECTS 🕒💥
 // The date object is used to work with date & times.
 
-// let date = new Date (0);
-let date = new Date ();
-// let date = new Date (2023, 1, 2, 3, 4, 6);
-//    let date = new Date ("2034, may 15, 12:09:23")
-
-/*
-let year = date.getFullYear();
-let dayOfMonth = date.getDate();
-let Month = date.getMonth();
-let week = date.getDay();
-let hours = date.getHours();
-let minutes = date.getMinutes();
-let seconds = date.getSeconds();
-*/
 
 
+  let date = new Date();
+  
+  date = date.toLocaleString();
+  // console.log(date);
 
-// date.setFullYear(2020);
-// date.setMonth(7);
-// date.setDate(17);
-// date.setHours(4)
-// date.setMinutes(17)
-// date.setSeconds(59);
+  // let dayOfMonth = date.getDate()
+  // let dayOfWeek = date.getDay()
+  // let month = date.getMonth()
+  // let hours = date.getHours();
+  // let minutes = date.getMinutes();
+  // let seconds = date.getSeconds();
+
+  // date.setFullYear(2026);
+
+
+
+let time = document.getElementById("time").innerText = date;
 
 
 
 
-console.log(formatDate());
-
-// date = date.toLocaleString();
-document.getElementById("date").innerHTML = date;
-//function to format the date
-timeForomat(date);
-formatDate(date);
-
+formatDate();
 function formatDate(date){
-   let year = date.getFullYear();
-   let month = date.getMonth();
-   let day = date.getDate();
-   let amOrPm =   hours >= 12 ? "am" : "pm";
-
-   hours = (hours % 12) || 12;
-
-   
-
-
+  let year = date.getFullyear();
+  let month = date.getMonth();
+  let day = date.getDate();
 
 return `${day}/${month}/${year}`
 
 }
-function timeForomat(date){
+
+function formatTime(date){
   let hours = date.getHours();
-  let minutes = date.getMinutes()
-  let seconds = date.getSeconds()
-  let amOrPm =   hours >= 12 ? "am" : "pm";
+  let minutes = date.getMinutes();
+  let seconds = date.getSeconds();
+  let  suffix = hours >= 12? "pm" : "am";
 
   hours = (hours % 12) || 12;
+  //converting to 12H CLOCK. 
 
-  
-
-
-  return `${hours}:${minutes}:${seconds}`
+return `${seconds}:${minutes}:${hours} ${suffix}`
 }
-

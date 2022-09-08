@@ -121,4 +121,20 @@ setInterval(update, 1000)
 
 
 // Synchoronous coode = In an Ordered sequence, step-by-step linear instructions(Start now, finish bow)
-//asynchro
+//asynchronous code = Out of sequence. Ex. ▪ Access a databaase ▪ Fetch a file ▪ Task that takes time (start now,   finish somtime later) 
+
+console.log("START");
+setTimeout(() => console.log("this is a asynchronous code"), 5000);
+console.log("END");
+
+
+//Console.time() = starts a timer you can use to track how long an operation takes, gives each timer a unique name.
+
+console.time("Response time");
+
+setTimeout(() => console.log("Hello world, what\'s good"), 4000)
+
+console.timeEnd("Response time");
+
+//                                          PROMISE 🐾😀
+//

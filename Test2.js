@@ -136,5 +136,41 @@ setTimeout(() => console.log("Hello world, what\'s good"), 4000)
 
 console.timeEnd("Response time");
 
-//                                          PROMISE 🐾😀
-//
+//                                                                            PROMISE 🐾😀
+//object that encapsulates the result of an asynchronous operation, let asynchronous methods return values like synchrous metthods."I promise" to return something in the future 🥰" 
+// here, we pretend we are trying to load a file.
+
+
+const promise = new Promise((resolve, reject) => {
+let fileLoaded = true;
+
+
+if (fileLoaded) {
+  resolve("this file sure has load");
+}
+
+else {
+  reject("file not loaded");
+}
+
+
+});
+
+//the STATE is 'pending' then: 'fulfilled' or 'rejected'
+// the RESULT is what can be returned   (2 part producing 🔼 and the consuming 🔽)
+
+promise.then(value => console.log(value))
+      .catch(error => console.log(error));
+
+
+//example 2
+
+const  wait = new Promise(resolve => {
+
+setTimeout(resolve, 5000);
+
+});
+wait.then(() => console.log("Thanks for waiting!"))
+
+
+// async 🔃 =

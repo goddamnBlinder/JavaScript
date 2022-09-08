@@ -173,4 +173,16 @@ setTimeout(resolve, 5000);
 wait.then(() => console.log("Thanks for waiting!"))
 
 
-// async 🔃 =
+// async 🔃 = it makes a function returns a promise
+
+const dimise = new Promise ((resolve, reject) => {
+   let fileLoaded= true;
+   
+   if (fileLoaded) {
+    resolve("Loading")
+   }
+else {
+  reject("! - Loading")
+}
+
+  });

@@ -106,3 +106,10 @@ h2{
     margin: 1rem auto;
 }
 
+#time{
+     
+    color: #ffff;
+    background-color: rgba(10, 174, 125, 0.784) ;
+    border: solid black 2px;
+}
+

@@ -74,37 +74,51 @@
 
 update();
 setInterval(update, 1000)
+//just as practiced, here for evey 1000ms it will update to show how the seconds counts
 
 
  function update(){
-  let date = new Date();
-  time.innerHTML = formatTime(date);
+      let date = new Date();
+      time.innerHTML = formatTime(date);
 
 
-  
-function formatTime(date){
-  let hours = date.getHours();
-  let minutes = date.getMinutes();
-  let seconds = date.getSeconds();
-  let  suffix = hours >= 12? "pm" : "am";
+      
+    function formatTime(date){
+      let hours = date.getHours();
+      let minutes = date.getMinutes();
+      let seconds = date.getSeconds();
+      let  suffix = hours >= 12? "pm" : "am";
 
-  hours = (hours % 12) || 12;
-  //converting to 12H CLOCK. 
+      hours = (hours % 12) || 12;
+      //converting to 12H CLOCK. 
 
-return `${hours}:${minutes}:${seconds} ${suffix}`
-}
+      hours = formatZeroes(hours);
+      minutes  = formatZeroes(minutes);
+      seconds = formatZeroes(seconds);
+      //this is a create a leading zero in the time the function is right below.
+      
+    return `${hours}:${minutes}:${seconds} ${suffix}`
 
+    }
+
+    function formatZeroes(time){
+      time = time.toString();
+      return time.length < 2 ? "0" + time : time;
+    }
  }
 
-formatDate();
+// formatDate();
 
 
-function formatDate(date){
-  let year = date.getFullyear();
-  let month = date.getMonth();
-  let day = date.getDate();
+// function formatDate(date){
+//   let year = date.getFullyear();
+//   let month = date.getMonth();
+//   let day = date.getDate();
 
-return `${day}/${month}/${year}`
+// return `${day}/${month}/${year}`
 
-}
+// }
 
+
+// Synchoronous coode = In an Ordered sequence, step-by-step linear instructions(Start now, finish bow)
+//asynchro

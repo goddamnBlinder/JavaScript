@@ -175,14 +175,18 @@ wait.then(() => console.log("Thanks for waiting!"))
 
 // async 🔃 = it makes a function returns a promise
 
-const dimise = new Promise ((resolve, reject) => {
-   let fileLoaded= true;
-   
-   if (fileLoaded) {
-    resolve("Loading")
-   }
-else {
-  reject("! - Loading")
+async function loadFile(){
+  let fileLoaded = false;
+
+
+if (fileLoaded) {
+   return "this file sure has load";
 }
 
-  });
+else { 
+"file not loaded";
+}
+
+}
+  loadFile().then(value => console.log(value))
+  .catch(error => console.log(error));

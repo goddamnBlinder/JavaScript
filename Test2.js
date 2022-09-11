@@ -173,20 +173,58 @@ setTimeout(resolve, 5000);
 wait.then(() => console.log("Thanks for waiting!"))
 
 
-// async 🔃 = it makes a function returns a promise
+//                                                                 ASYNC 🔃 = it makes a function returns a promise
+
 
 async function loadFile(){
   let fileLoaded = false;
 
 
 if (fileLoaded) {
-   return "this file sure has load";
+   return "File loaded";
 }
 
 else { 
-"file not loaded";
+ throw "file not loaded";
 }
 
 }
   loadFile().then(value => console.log(value))
   .catch(error => console.log(error));
+
+ // example 2
+ // but is more syntax.
+
+
+ function load(){
+  let fileLoaded = false;
+
+
+if (fileLoaded) {
+   return Promise.resolve("File loaded");
+}
+
+else { 
+return Promise.reject("file not loaded");
+}
+
+}
+  load().then(value => console.log(value))
+  .catch(error => console.log(error));
+
+//                                                                      AWAIT ✋  = It makes an async wait for a promIse.
+
+async function file(){
+  let fileLoaded = true;
+
+
+if (fileLoaded) {
+   return "File loaded";
+}
+
+else { 
+ throw "file not loaded";
+}
+}
+let message = await file();
+console.log(message);

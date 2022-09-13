@@ -214,17 +214,26 @@ return Promise.reject("file not loaded");
 
 //                                                                      AWAIT ✋  = It makes an async wait for a promIse.
 
+
 async function file(){
-  let fileLoaded = true;
+  let fileLoaded = false;
 
+        if (fileLoaded) {
+          return "File loaded";
+        }
 
-if (fileLoaded) {
-   return "File loaded";
+        else { 
+        throw "file not loaded";
+        }
 }
-
-else { 
- throw "file not loaded";
+async function startprocress(){
+  try{
+  let message = await file().then().catch()
+  console.log(message);
+}
+catch(err){
+  console.log(err);
 }
 }
-let message = await file();
-console.log(message);
+// the await only works inside a async function
+startprocress();

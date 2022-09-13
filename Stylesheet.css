@@ -1,81 +1,3 @@
-/* sorry i tampered with your code, am not trying to claim or anything.
-/* pls just ignore it, i only felt that your code needs some correction */
-
-*{
-    margin: 0;
-    border: 0;
-}
-
-body {
-    position: flex;
-    align-items: center;
-    height: 100vh; 
-    font-weight: bold;
-}
-.container-form{
-    margin: 0 auto;
-    color: grey;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-
-
-}
-
-h2{
-    font-size: 15px;
-    font-family:'Courier New', Courier, monospace;
-    margin: 0 auto;
-}
- 
-
-.theForm{
-    display: table;
-    background-color:rgba(10, 174, 125, 0.784);
-    color: #ffff;
-    font-size: 2.4rem;
-    border: 4px solid black;
-    padding: 14px;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-}
-
-.row{
-    display: table-row;
-
-}
-
-.row label {
-    display:table-cell;
-     font: 2px;
-}
-
-.row input{
-    display: table-cell; 
-} 
-
-.row #Name{
-    padding: 5px;
-   font-size: 20px;
-}
-
-.btn{
-    width: 7rem;
-    padding: 0.5rem;
-    font-size: 13px;
-    font-weight: 600;
-    outline: none;
-    border: none;
-    margin: 1rem auto;
-    transition: all .3s ease-in;
-}
-
-.btn:hover{
-    background-color: rgba(10, 174, 125, 0.784);
-    color: white;
-} 
-
 
    
 .converter{
@@ -86,8 +8,7 @@ h2{
     width: 210px;
     height: 450px;
     border:solid 4px black;
-    margin: 0 auto;
-       
+    margin: 0 auto;   
     
 }
 

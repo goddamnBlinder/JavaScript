@@ -158,29 +158,61 @@ const myImage = document.querySelector("#image");
 
 myButton.addEventListener("click", () => {
     if
-    (myImage.style.visibility == "hidden") {
-        myImage.style.visibility = "visible";
+    (myImage.style.display == "none") {
+        myImage.style.display = "block";
     }
-    else {
-        myImage.style.visibility ="hidden";
+    else {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+        myImage.style.display ="none";
     }
 });
 
 //       How to ditact KeyPresses  ✔
 let box = document.getElementById("box");
 window.addEventListener("keydown", move);
-let x = 0;
-let y = 0;
+let ex = 0;
+let why = 0;
 
 
 function move(event){
  switch (event.key) {
     case "ArrowDown":
-        y+=5;
-        box.style.top = y + "px";
+        why+=5;
+        box.style.top = why + "px";
         break;
- 
-    default:
-        break;
+        case "ArrowUp":
+            why-=5;
+            box.style.top = why + "px";
+        break
+        case "ArrowRight":
+            ex+=5;
+            box.style.left = ex + "px";
+        case "ArrowLeft":
+            ex-=5;
+            box.style.left = ex + "px";
  }
 }
+// A css Animation in Js.😜🤍
+
+//e.g 1 (Rotate)
+ let rotate = document.getElementById("bones");
+ let animate = document.getElementById("animate");
+
+ rotate.addEventListener("click", begin)
+
+ function begin(){
+    let timeer = null;
+    let degrees = 0;
+ timeer = setInterval(frame, 5);
+function frame(){
+    if(degrees >= 360){
+        clearInterval(timeer);
+    }
+    else{
+        degrees +=1;
+        animate.style.transform = "rotateZ("+degrees+"deg)";
+    }
+}
+
+ }
+//                               Canvas API 🎨
+// a means for drawing graphics used for animations

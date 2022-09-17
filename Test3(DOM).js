@@ -129,4 +129,58 @@ function doSomethingElse(){
 //Link an Event to a Function, here one element can have several events and can innovoke so many functions.
 //.addEventListeners(event, functions, useCapture)
 
+const innerDiv = document.getElementById("innerDiv");
+const outerDiv = document.getElementById("outerDiv");
 
+// innerDiv.addEventListener("mouseover", change);
+// innerDiv.addEventListener( "mouseout", changeback);
+
+function change(){
+    innerDiv.style.backgroundColor = 'red';
+}
+
+function changeback(){
+    innerDiv.style.backgroundColor = 'olivedrab';
+}
+//to test the useCapture
+
+innerDiv.addEventListener("click", changeBlue)
+outerDiv.addEventListener("click",changeBlue)
+
+function changeBlue (){
+    // alert(`you selected ${this.id}`)
+    this.style.backgroundColor = "skyblue";
+}
+
+//             How to Hide HTML Element ✔
+const myButton = document.getElementById("myButton");
+const myImage = document.querySelector("#image");
+
+myButton.addEventListener("click", () => {
+    if
+    (myImage.style.visibility == "hidden") {
+        myImage.style.visibility = "visible";
+    }
+    else {
+        myImage.style.visibility ="hidden";
+    }
+});
+
+//       How to ditact KeyPresses  ✔
+let box = document.getElementById("box");
+window.addEventListener("keydown", move);
+let x = 0;
+let y = 0;
+
+
+function move(event){
+ switch (event.key) {
+    case "ArrowDown":
+        y+=5;
+        box.style.top = y + "px";
+        break;
+ 
+    default:
+        break;
+ }
+}

@@ -221,15 +221,19 @@ let canvas = document.querySelector("#myCanvas");
 let context = canvas.getContext("2d");
 
 //DRAW LINE
-// context.strokeStyle = "orange";
-// context.lineWidth = 2;
-// context.beginPath();
-// context.moveTo(0,0);
-// context.lineTo(250,250);
-// context.lineTo(250,500);
-// context.moveTo(500,0);
-// context.lineTo(250,250);
-// context.stroke()
+context.strokeStyle = "orange";
+context.lineWidth = 2;
+context.beginPath();
+context.moveTo(0,0);
+context.lineTo(250,250);
+context.lineTo(250,500);
+context.moveTo(500,0);
+context.lineTo(250,250);
+context.stroke()
+
+
+let mycanvas = document.querySelector("#canvas");
+let context = mycanvas.getContext("2d");
 
 //DRAW TRIANGLE 🔺
 context.beginPath();

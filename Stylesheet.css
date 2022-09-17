@@ -70,5 +70,9 @@ height: 100px;
 }
 #myCanvas{
     border: 1px solid #000;
-    /* background-color: skyblue; */
+    
+}
+#canvas{
+    border: 1px solid #000;
+    
 }

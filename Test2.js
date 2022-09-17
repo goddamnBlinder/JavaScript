@@ -173,7 +173,7 @@ setTimeout(resolve, 5000);
 wait.then(() => console.log("Thanks for waiting!"))
 
 
-//                                                                 ASYNC 🔃 = it makes a function returns a promise
+//                                                         ASYNC 🔃 = it makes a function returns a promise
 
 
 async function loadFile(){
@@ -212,7 +212,7 @@ return Promise.reject("file not loaded");
   load().then(value => console.log(value))
   .catch(error => console.log(error));
 
-//                                                                      AWAIT ✋  = It makes an async wait for a promIse.
+//                                                          AWAIT ✋  = It makes an async wait for a promIse.
 
 
 async function file(){

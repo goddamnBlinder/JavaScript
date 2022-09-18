@@ -214,6 +214,7 @@ function frame(){
 }
 
  }
+
 //                               Canvas API 🎨
 // a means for drawing graphics used for animations, games, and data Visualization
 
@@ -233,14 +234,12 @@ context.stroke()
 
 
 let mycanvas = document.querySelector("#canvas");
-let context = mycanvas.getContext("2d");
+let cologne = mycanvas.getContext("2d");
 
 //DRAW TRIANGLE 🔺
-context.beginPath();
-context.moveTo(250, 0);
-context.lineTo(250, 250);
-context.lineTo(250, 0);
-context.lineTo(250, 0);
-
-
-context.storke();
+cologne.beginPath();
+cologne.moveTo(250, 0);
+cologne.lineTo(250, 250);
+cologne.lineTo(250, 0);
+cologne.lineTo(250, 0);
+// cologne.storke();

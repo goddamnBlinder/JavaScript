@@ -232,14 +232,68 @@ context.moveTo(500,0);
 context.lineTo(250,250);
 context.stroke()
 
+//DRAW TRIANGLE 🔺
 
 let mycanvas = document.querySelector("#canvas");
 let cologne = mycanvas.getContext("2d");
 
-//DRAW TRIANGLE 🔺
+cologne.fillStyle ="yellow"
+cologne.lineWidth = 1;
+cologne.strokeStyle = "black"
 cologne.beginPath();
-cologne.moveTo(250, 0);
-cologne.lineTo(250, 250);
-cologne.lineTo(250, 0);
-cologne.lineTo(250, 0);
-// cologne.storke();
+cologne.moveTo(125, 0);
+cologne.lineTo(0, 125);
+cologne.lineTo(250, 125);
+context.lineTo(125, 0);
+cologne.stroke();
+cologne.fill();
+
+//DRAW RECTANGLE
+let cont = document.querySelector("#rect");
+let rect = cont.getContext("2d");
+
+rect.beginPath();
+rect.stroke();
+rect.fillStyle = "purple"
+rect.strokeStyle = "black"
+rect.strokeRect(0, 0, 250, 250);
+rect.fillRect(0, 0, 250, 250);
+
+rect.beginPath();
+rect.stroke();
+rect.fillStyle = "yellow"
+rect.strokeStyle = "black"
+rect.strokeRect(0, 250, 250, 250);
+rect.fillRect(0, 250, 250, 250);
+
+rect.beginPath();
+rect.stroke();
+rect.fillStyle = "orange"
+rect.strokeStyle = "black"
+rect.strokeRect(250, 250, 250, 250);
+rect.fillRect(250, 250, 250, 250);
+
+rect.beginPath();
+rect.stroke();
+rect.fillStyle = "rgba(10, 174, 125, 0.784)"
+rect.strokeStyle = "black"
+rect.strokeRect(250, 0, 250, 250);
+rect.fillRect(250, 0, 250, 250);
+
+//DRAW A CIRCLE 🟢
+let conts = document.querySelector("#circle");
+let circle = conts.getContext("2d");
+
+circle.beginPath();
+
+circle.fillStyle = "lime";
+circle.lineWidth = 1;
+circle.arc(125, 125, 75, 0, 2 * Math.PI, true)
+circle.fill();
+circle.stroke();
+
+
+
+//TEXT DRAW 
+let test= document.querySelector("#circle");
+let text = conts.getContext("2d");

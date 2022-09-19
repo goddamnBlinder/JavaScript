@@ -304,8 +304,28 @@ name.fillStyle = "greu";
 name.textAlign = "center"
 name.fillText("`JamesWalker`", 250, 85);
 
-//                                            WINDOW OBJECT 🔳
+//                                           WINDOW OBJECT 🔳
 // This is an Interface use to talk to the web browser.
 // the DOM is a property of the window.
 
-console.dirxml("window");
+// console.dir(window);
+// console.log(window.innerWidth);
+// console.log(window.outerHeight);
+// console.log(window.scrollX);
+// console.log(window.scrollY);
+// console.log(window.scrollbars);
+
+// console.log(window.location.href);
+// window.location.href = "https://google.com";
+
+// console.log(window.location.hostname);
+// console.log(window.location.pathname);
+
+let press = document.querySelector("#press");
+press.addEventListener("click", () => window.open("https://google.com"))
+                                    //   window.close()
+                                    //   window.print()
+window.alert("My oh my");
+window.comfirm("Guy, are you sure?!");
+
+if(age < 18)vb   

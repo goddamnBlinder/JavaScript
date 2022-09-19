@@ -222,7 +222,7 @@ let canvas = document.querySelector("#myCanvas");
 let context = canvas.getContext("2d");
 
 //DRAW LINE
-context.strokeStyle = "orange";
+context.strokeStyle = "rgba(10, 174, 125, 0.784)";
 context.lineWidth = 2;
 context.beginPath();
 context.moveTo(0,0);
@@ -294,6 +294,18 @@ circle.stroke();
 
 
 
-//TEXT DRAW 
-let test= document.querySelector("#circle");
-let text = conts.getContext("2d");
+// //TEXT DRAW 
+let test= document.querySelector("#test");
+let name = test.getContext("2d");
+
+
+name.font = "30px MV Boli";
+name.fillStyle = "greu";
+name.textAlign = "center"
+name.fillText("`JamesWalker`", 250, 85);
+
+//                                            WINDOW OBJECT 🔳
+// This is an Interface use to talk to the web browser.
+// the DOM is a property of the window.
+
+console.dirxml("window");

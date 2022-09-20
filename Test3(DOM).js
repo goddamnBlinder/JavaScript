@@ -369,4 +369,5 @@ function deleteCookie(){
 
 function getCookie(name){
     const cDecoded = decodeURIComponent(document.cookie);
+    console.log(cDecoded);
 }

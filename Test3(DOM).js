@@ -340,16 +340,33 @@ press.addEventListener("click", () => window.open("https://google.com"))
 // a small text file stored on your computer used to remember information about the user saved in name=value pairs
 
 
-document.cookie = "firstName=James; expires=1/1/2030 12:00:00 WAT; path=/";
-document.cookie = "LastName=Walker; expires=Sun, 1 January 2030 12:00:00 UTC; path=/";
+// document.cookie = "firstName=James; expires=1/1/2030 12:00:00 WAT; path=/";
+// document.cookie = "LastName=Walker; expires=Sun, 1 January 2030 12:00:00 UTC; path=/";
 // to Over wright a cookie, you just need to change it's name, when the dates excede, it expires.
 
-console.log(document.cookie);
+// console.log(document.cookie);
 
 //E.g 2
+console.log(document.cookie)
+
+setCookie("email", "MarshMatters@gmail.com", 365);
+
 function setCookie(name, value, bestBefore){
     const date = new Date();
     date.setTime(date.getTime() + bestBefore + 24 * 60 * 60 *1000);
-    let bestBefore = "Expires = " + date.toUTCString();
-    document.cookie = `${name} = ${value}
+    let expires = "expires = " + date.toUTCString();
+    document.cookie = `${name} = ${value}; ${expires}; path =/`;
+}
+
+deleteCookie("firstName");
+deleteCookie("lastName");
+deleteCookie("email");
+
+
+function deleteCookie(){
+    setCookie(name, null, null)
+}
+
+function getCookie(name){
+    const cDecoded = decodeURIComponent(document.cookie);
 }

@@ -342,4 +342,14 @@ press.addEventListener("click", () => window.open("https://google.com"))
 
 document.cookie = "firstName=James; expires=1/1/2030 12:00:00 WAT; path=/";
 document.cookie = "LastName=Walker; expires=Sun, 1 January 2030 12:00:00 UTC; path=/";
+// to Over wright a cookie, you just need to change it's name, when the dates excede, it expires.
+
 console.log(document.cookie);
+
+//E.g 2
+function setCookie(name, value, bestBefore){
+    const date = new Date();
+    date.setTime(date.getTime() + bestBefore + 24 * 60 * 60 *1000);
+    let bestBefore = "Expires = " + date.toUTCString();
+    document.cookie = `${name} = ${value}
+}

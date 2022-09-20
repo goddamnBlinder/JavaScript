@@ -719,7 +719,7 @@ const car = {
 }
 
 car.drive();
-//                                                        CLASS😎
+//                                                        CLASS 👨‍👦👨‍👨‍👦‍👦
 //A blueprint for creating objects, defines what properties and methods they have to use a constructor for a unique property.
 
 class player  {

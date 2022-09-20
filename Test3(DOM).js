@@ -325,7 +325,21 @@ let press = document.querySelector("#press");
 press.addEventListener("click", () => window.open("https://google.com"))
                                     //   window.close()
                                     //   window.print()
-window.alert("My oh my");
-window.comfirm("Guy, are you sure?!");
+// window.alert("My oh my");
+// window.comfirm("Guy, are you sure?!");
 
-if(age < 18)vb   
+
+// let cage = window.prompt("Enter your age?");
+// if(cage < 18){
+//     window.alert("you must to 18+ to visit this site")
+//     window.close();
+// }
+
+
+//                                                             COOKIES 🍪
+// a small text file stored on your computer used to remember information about the user saved in name=value pairs
+
+
+document.cookie = "firstName=James; expires=1/1/2030 12:00:00 WAT; path=/";
+document.cookie = "LastName=Walker; expires=Sun, 1 January 2030 12:00:00 UTC; path=/";
+console.log(document.cookie);

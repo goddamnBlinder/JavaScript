@@ -1039,7 +1039,7 @@ try {
 }
 
 finally {
-  console.log("Finally element always display");
+  console.log("The finally element, always display.");
 }
 
 // finally always run wether the code is corect or not.

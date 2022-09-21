@@ -347,15 +347,38 @@ press.addEventListener("click", () => window.open("https://google.com"))
 // console.log(document.cookie);
 
 //E.g 2
-console.log(document.cookie)
+
+
+
+
+
+// console.log(document.cookie)
+
+const firstText = document.querySelector("#firstCookie");
+const lastText = document.querySelector("#lastCookie");
+const sumbit = document.querySelector("#subCookie");
+const get = document.querySelector("#getCookie");
+
+sumbit.addEventListener("click", () => {
+       setCookie("firstNmae", firstText.value, 365)
+       setCookie("lasstNmae", lastText.value, 365)
+});
+
+get.addEventListener("click", () => {
+     firstText.value = getCookie("firstName")
+     lastText.value = getCookie("lastName")
+
+})
+
+
 
 setCookie("email", "MarshMatters@gmail.com", 365);
 
-function setCookie(name, value, bestBefore){
+function setCookie(names, value, bestBefore){
     const date = new Date();
-    date.setTime(date.getTime() + bestBefore + 24 * 60 * 60 *1000);
+    date.setTime(date.getTime() + (bestBefore + 24 * 60 * 60 *1000));
     let expires = "expires = " + date.toUTCString();
-    document.cookie = `${name} = ${value}; ${expires}; path =/`;
+    document.cookie = `${names} = ${value}; ${expires}; path =/`;
 }
 
 deleteCookie("firstName");
@@ -363,11 +386,29 @@ deleteCookie("lastName");
 deleteCookie("email");
 
 
-function deleteCookie(){
+function deleteCookie(name){
     setCookie(name, null, null)
 }
 
+
+
+setCookie("firstName", "Peter", 365);
+setCookie("lastName", "Parker", 365);
+
+console.log(getCookie("firstname"));
+console.log(getCookie("lastname"));
+
 function getCookie(name){
     const cDecoded = decodeURIComponent(document.cookie);
-    console.log(cDecoded);
+    // console.log(cDecoded);
+    const cArray = cDecoded.split("; ");
+    // console.log(cArray);
+    let result;
+
+cArray.forEach(element => {
+    if(element.indexOf(name) == 0){
+        result = element.substring(name.length + 1)
+    }
+})
+   
 }

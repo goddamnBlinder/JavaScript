@@ -890,6 +890,7 @@ class joules {
     return `This particular power is: ${this._power}joules`;
   }
 
+  
   get gas(){
 
          return ` ${this._gas}L (${this._gas / 50 * 100})%`;  

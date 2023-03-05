@@ -663,7 +663,7 @@ mall.forEach((value, key) => console.log(`${key} $${value}`));
 
 
 //                                                          OBJECTS 🤫🐱‍👤🐱‍🏍
-// A group of Properties and methods (properties = what it has) (Methods = ways it does)
+// A group of Properties and methods (properties = what it has) (Methods = what it does)
  
 
  const plant = {
@@ -877,6 +877,7 @@ class Dog extends Mammals{
   console.log(chihuahua.barkSound);
   console.log(climb.climbSpeed);   
 
+//*Getters and Setters
 // get = binds an object property to a function when that property is accessed
 // the underscore indicates that, the element is been protected
 
@@ -1043,7 +1044,9 @@ finally {
   console.log("The finally element, always display.");
 }
 
-// finally always run wether the code is corect or not.
+//? finally always run wether the code is corect or not.
 
 //  Please, do so to go through test2.js and test3.js and tell me what you think 😁
- 
+ {{{{{{
+  {{{{}}}}
+ }}}}}}

@@ -64,7 +64,7 @@ children.forEach(list => list.style.backgroundColor = "lightgreen")
 
 
 
-//                                                            Adding and HTML Elemnts ✔
+// ?                                                     Adding and HTML Elemnts ✔
 //add/change HTML elements
 //.innerHTML (vulnerable to XSS (cross-site scripting) (attacks)
 // .textContent (more secure)
@@ -191,10 +191,11 @@ function move(event){
             box.style.left = ex + "px";
  }
 }
-// A css Animation in Js.😜🤍
+//? A css Animation in Js.😜🤍
 
 //e.g 1 (Rotate)
  let rotate = document.getElementById("bones");
+ console.log("🚀 ~ file: Test3(DOM).js:198 ~  let rotate");
  let animate = document.getElementById("animate");
 
  rotate.addEventListener("click", begin)
@@ -412,3 +413,5 @@ cArray.forEach(element => {
 })
    return result;
 }
+    
+               let boys = "Obiada";

@@ -74,7 +74,7 @@
 
 update();
 setInterval(update, 1000)
-//just as practiced, here for evey 1000ms it will update to show how the seconds counts
+//?just as practiced, here for evey 1000ms it will update to show how the seconds counts
 
 
  function update(){
@@ -235,5 +235,5 @@ catch(err){
   console.log(err);
 }
 }
-// the await only works inside a async function
+//the await only works inside a async function
 startprocress();
